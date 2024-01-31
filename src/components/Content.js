@@ -23,12 +23,12 @@ const Content = ({ content, className }) => {
   <div role="button" onClick={clickedContent} onKeyDown={clickedContent} tabIndex={0} className={className}>{content}</div>
   )
 }
-
+// export const Blocks = () => <div>hello</div>;
 export const Blocks = ({ postContent, images }) => {
   let imagesUsed = 0;
-  console.log(postContent)
+  console.log("yes",{postContent})
   console.log("images: ",images)
-  return postContent.length === 0 ? [] : postContent.forEach((block,i) => {
+  return postContent.length === 0 ? [] : postContent.map((block,i) => {
     switch (block.type) {
       case "text":
         console.log(block.text)

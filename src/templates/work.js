@@ -33,21 +33,23 @@ const WorkTemplate = ({
   blockImgs,
   other
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
   const formatCurrency = (price) => `$${price/100}`
+  console.log({PostContent});
   const img = getImage(featuredImg)
   let [iframeClicked,setIframeClicked] = useState("")
   const iframeCoverClicked = (e) => setIframeClicked("clicked")
-  const { addItem,cartDetails,incrementItem } = useShoppingCart()
-  const addToCart = async (e) => {
-      e.preventDefault()
-      delete product.id
-      if(cartDetails[product.price_id])
-        incrementItem(product.price_id,1)
-      else
-        addItem(product,1)
-    }
+  // const { addItem,cartDetails,incrementItem } = useShoppingCart()
+  // const addToCart = async (e) => {
+  //     e.preventDefault()
+  //     delete product.id
+  //     if(cartDetails[product.price_id])
+  //       incrementItem(product.price_id,1)
+  //     else
+  //       addItem(product,1)
+  //   }
   const displayURL = display_url ? display_url : url;
+  
   return (
     <div id="work-page-wrapper">
     <section className="section work-page">
@@ -87,7 +89,7 @@ const WorkTemplate = ({
         {product && product.price ?
           <div className="product">
           <p className="price">{formatCurrency(product.price)}</p>
-          <button className="add-to-cart" onClick={addToCart}>{spanify("Add to Cart")}</button>
+          {/* <button className="add-to-cart" onClick={addToCart}>{spanify("Add to Cart")}</button> */}
           </div>
            : ""}
       </div>
@@ -137,8 +139,7 @@ const Work = ({ data }) => {
   const { allStripePrice, other } = data
   const mode = data.site.siteMetadata.gatsby_env
   let price_id = post.frontmatter[`price_${(mode === "development" ? 'test_':'')}id`]
-  const product = getProduct(allStripePrice, price_id)
-  console.log("other",other)
+  // const product = getProduct(allStripePrice, price_id)
   return (
     <Layout>
       <WorkTemplate
@@ -151,7 +152,7 @@ const Work = ({ data }) => {
         images={post.frontmatter.images}
         featured={post.frontmatter.featured}
         postContent={post.frontmatter.postContent}
-        product={product}
+        // product={product}
         mode={mode}
         type={post.frontmatter.type}
         slug={post.fields.slug}
@@ -246,20 +247,20 @@ export const pageQuery = graphql`
         }
       }
     }
-    allStripePrice {
-      edges {
-        node {
-          id
-          unit_amount
-          product {
-            id
-            images
-            description
-            name
-          }
-        }
-      }
-    }
+    # allStripePrice {
+    #   edges {
+    #     node {
+    #       id
+    #       unit_amount
+    #       product {
+    #         id
+    #         images
+    #         description
+    #         name
+    #       }
+    #     }
+    #   }
+    # }
     site {
       siteMetadata {
         gatsby_env

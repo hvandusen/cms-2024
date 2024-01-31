@@ -6,16 +6,16 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2')
 const fs = require("fs")
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-   resolve: {
-      fallback: {
-        crypto: require.resolve('crypto-browserify'),
-        stream: require.resolve('stream-browserify'),
-      },
-    },
-  })
-}
+// exports.onCreateWebpackConfig = ({ actions }) => {
+//   actions.setWebpackConfig({
+//    resolve: {
+//       fallback: {
+//         crypto: require.resolve('crypto-browserify'),
+//         stream: require.resolve('stream-browserify'),
+//       },
+//     },
+//   })
+// }
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage, createNodeField } = actions

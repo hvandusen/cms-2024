@@ -1,84 +1,73 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import React from 'react'
+import { Link } from 'gatsby'
+import logo from '../img/ellsworth-shape-logo-padding.png'
+import cartLogo from '../img/ellsworth-shape-cart.png'
 
-const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
+const Navbar = class extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: false,
+      navBarActiveClass: '',
+      emailCopied: false
+    }
+  }
 
-  return (
-    <nav
-      className="navbar is-transparent"
-      role="navigation"
-      aria-label="main-navigation"
-    >
-      <div className="container">
-        <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-          </Link>
-          {/* Hamburger menu */}
-          <button
-            className={`navbar-burger burger ${isActive && "is-active"}`}
-            aria-expanded={isActive}
-            onClick={() => setIsActive(!isActive)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+  toggleMenu = () => {
+    // toggle the active boolean in the state
+    this.setState(
+      {
+        active: !this.state.active,
+      },
+      // after state has been updated,
+      () => {
+        // set the class in state for the navbar accordingly
+        this.state.active
+          ? this.setState({
+              navBarActiveClass: 'is-active',
+            })
+          : this.setState({
+              navBarActiveClass: '',
+            })
+      }
+    )
+  }
+
+  render() {
+    const cartmode = this.props.cartcount > 0
+    return (
+      <nav
+        className={`navbar is-transparent ${this.state.navBarActiveClass}`}
+        role="navigation"
+        aria-label="main-navigation"
+      >
+        <Link to="/" className="navbar-item navbar-icon" title="henry van dusen homepage">
+          <div className={`nav-icon ${(cartmode ? 'cart-mode' : "")}`}
+          role="menu" tabIndex={0}
+          data-target="nav"
+          style={{
+            backgroundImage: `url(${(cartmode ? cartLogo : logo)})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat"
+
+          }}
+          onClick={() => this.toggleMenu()}
+          onKeyPress={console.log}
+          ></div>
+        </Link>
+        <Link to="/" id="nav-main-link" className="navbar-item" title="henry van dusen homepage"><h1 className="header"><span>H</span><span>e</span><span>n</span><span>r</span><span>y</span><span> </span><span>V</span><span>a</span><span>n</span><span> </span><span>D</span><span>u</span><span>s</span><span>e</span><span>n</span></h1></Link>
+        <button className={`email ${this.state.emailCopied ? "copied" : ""}`}type="email" value="henry@candusen.net" onClick={() => {
+          navigator.clipboard.writeText("henry@candusen.net");
+          this.setState({emailCopied: true});
+        }}>{this.state.emailCopied ? "Email copied!" : "Wanna work together?"}</button>
+        <div className="container">
+          <div className="navbar-brand">
+
+          </div>
         </div>
-        <ul
-          id="navMenu"
-          className={` navbar-start has-text-centered navbar-menu ${
-            isActive && "is-active"
-          }`}
-        >
-          {/* TODO: inline override of padding is a result of refactoring
-                to a ul for accessibilty purposes, would like to see a css
-                re-write that makes this unneccesary.
-             */}
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/about">
-              About
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/products">
-              Products
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/blog">
-              Blog
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/contact">
-              Contact
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/contact/examples">
-              Form Examples
-            </Link>
-          </li>
-          <li className="navbar-end has-text-centered">
-            <a
-              className="navbar-item"
-              href="https://github.com/decaporg/gatsby-plugin-decap-cms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <img src={github} alt="Github" />
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-};
+      </nav>
+    )
+  }
+}
 
-export default Navbar;
+export default Navbar

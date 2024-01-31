@@ -52,7 +52,7 @@ AboutPage.propTypes = {
 
 export default AboutPage;
 
-export const aboutPageQuery = graphql`
+export const aboutPageQueryz = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

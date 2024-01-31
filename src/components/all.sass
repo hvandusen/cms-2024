@@ -1,0 +1,950 @@
+// @import '~bulma/sass/utilities/initial-variables'
+// @import '~bulma'
+@use "sass:math"
+@import 'WorkTypeColors'
+@import 'mixins'
+@import 'paperAddOns'
+$thingToColor: 'border-color'
+@keyframes rgbFade
+  0%
+    color: '#ff0000'
+  32.9%
+    color: '#ff0000'
+  33%
+    color: '#476fff'
+  65.9%
+    color: '#476fff'
+  66%
+    color: '#3abc3a'
+  99.9%
+    color: '#3abc3a'
+
+@font-face
+  font-family: 'Aktiv'
+  src: url('../../static/fonts/AktivGrotesk.ttf')   format('truetype')
+
+@font-face
+  font-family: 'Haptik'
+  src: url('../../static/fonts/GT-Haptik-Regular.ttf')   format('truetype')
+
+@font-face
+  font-family: 'Az-Regular'
+  src: url('../../static/fonts/AkzidenzGrotesk-Regular.ttf')   format('truetype')
+
+@font-face
+  font-family: 'Az-Medium'
+  src: url('../../static/fonts/AkzidenzGrotesk-Medium.ttf')   format('truetype')
+
+@font-face
+  font-family: 'Az-Bold'
+  src: url('../../static/fonts/AkzidenzGrotesk-Bold.ttf')   format('truetype')
+
+@font-face
+  font-family: 'Az-Italic'
+  src: url('../../static/fonts/AkzidenzGrotesk-Italic.ttf')   format('truetype')
+
+@font-face
+  font-family: 'Newzald'
+  src: url('../../static/fonts/Newzald-Book.otf')   format('opentype')
+  font-weight: normal!important
+
+@font-face
+  font-family: 'mtdbt2f'
+  src: url('../../static/fonts/mtdbt2f-f.ttf')   format('truetype')
+  src: url('../../static/fonts/mtdbt2f-f.woff')   format('woff')
+
+@font-face
+  font-family: 'Aktiv'
+  src: url('../../static/fonts/AktivGrotesk.ttf')   format('truetype')
+
+@font-face
+  font-family: "Swiss Medium"
+  src: url("/fonts/swiss-721-medium.woff") format("woff")
+  src: url("/fonts/swiss-721-medium.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Normal"
+  src: url("/fonts/swiss-721-normal.woff") format("woff")
+  src: url("/fonts/swiss-721-normal.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Condensed"
+  src: url("/fonts/swiss-721-Condensed.woff") format("woff")
+  src: url("/fonts/swiss-721-Condensed.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Light"
+  src: url("/fonts/swiss-721-light.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Round"
+  src: url("/fonts/swiss-721-bold-rounded.woff") format("woff")
+  src: url("/fonts/swiss-721-bold-rounded.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Extended"
+  src: url("/fonts/swiss-721-extended.woff") format("woff")
+  src: url("/fonts/swiss-721-extended.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Outline"
+  src: url("/fonts/swiss-721-outline.woff") format("woff")
+  src: url("/fonts/swiss-721-outline.ttf") format("truetype")
+
+@font-face
+  font-family: "Swiss Thick"
+  src: url("/fonts/swiss-721-thick.woff") format("woff")
+  src: url("/fonts/swiss-721-thick.ttf") format("truetype")
+
+$mainFont: "Swiss Medium"
+$boldFont: 'Az-Medium'
+$bookFont: "Swiss Normal"
+$italicFont: 'Az-Italic'
+$fadeRGB: rgbFade 3s linear infinite
+
+@mixin round
+  font-size: 1rem
+  letter-spacing: 2px
+  text-transform: uppercase
+  line-height: 1.4
+  top: 100%
+  left: 0
+  font-family: 'Swiss Round'
+
+html,body
+  margin: 0
+  padding: 0
+
+html
+  font-size: 12px
+
+body
+  font-family: $mainFont
+  font-size: 1rem
+  line-height: 1.25em
+  color: black
+  text-rendering: geometricprecision
+b
+  font-family: 'Az-Bold'
+
+i
+  font-family: 'Az-Italic'te
+h1,h2,h3,h4,h5,h6
+  padding: 0
+  margin: 0
+  font-family: Az-Bold
+h1
+  font-size: 4rem
+  line-height: 4.5rem
+  margin: 0
+h2
+  font-size: 2rem
+  line-height: 2.5rem
+h3
+  font-size: 2rem
+  line-height: 2rem
+h4
+  text-transform: uppercase
+  letter-spacing: 3px
+h5
+  font-family: $bookFont
+  font-size: 3rem
+  line-height: 3.5rem
+body h6
+  font-family: $bookFont
+  font-size: 2em
+  line-height: 2.5rem
+  margin: 0
+  padding: 0
+
+a
+  color: #000000
+  text-decoration: none
+
+.h6
+  font-family: $bookFont
+  font-size: 2em
+  line-height: 2.5rem
+  margin: 0
+  padding: 0
+
+p
+  margin: 1rem 0
+  font-size: 1.5rem
+  line-height: 1.3em
+  font-family: $bookFont
+  white-space: pre-wrap
+
+span
+  font-size: 1.5rem
+  line-height: 1.7rem
+.wrapper
+  @include wrapper
+
+.cart
+  position: fixed
+  top: 1rem
+  right: 1rem
+  z-index: 32
+  display: flex
+  width: 66px
+  > div
+    margin-left: 5px
+  .cart-stuff
+    font-size: 13px
+    button, .checkout
+      border: solid black 1px
+      padding: 4px
+      cursor: pointer
+      &:hover
+        color: white
+        background: black
+    button
+      margin: 0
+      background: none
+      margin-bottom: 5px
+    .cart-count
+      margin-bottom: 28px
+
+@mixin effect8
+  position: relative
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+
+  &:before, &:after
+    content: ""
+    position: absolute
+    z-index: -1
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8)
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8)
+    box-shadow: 0 0 20px rgba(0,0,0,0.8)
+    top: 10px
+    bottom: 10px
+    left: 0
+    right: 0
+    -moz-border-radius: math.div(100px,10px)
+    border-radius: math.div(100px,10px)
+
+  &:after
+    right: 10px
+    left: auto
+    -webkit-transform: skew(8deg) rotate(3deg)
+    -moz-transform: skew(8deg) rotate(3deg)
+    -ms-transform: skew(8deg) rotate(3deg)
+    -o-transform: skew(8deg) rotate(3deg)
+    transform: skew(8deg) rotate(3deg)
+
+@media(max-width:480px)
+  body .navbar
+    // width: 150px
+    .nav-icon
+      width: 2.7rem
+      height: 2rem
+  body .homepage
+    margin: 0
+    .project-grid-large-thumbs
+      display: grid
+      grid-auto-flow: row dense
+      grid-template-columns: repeat(8, 1fr)
+      grid-auto-rows: minmax(3rem, auto)
+      margin-right: 1rem
+      margin-left: 10rem
+      grid-gap: 2rem
+      margin-left: 1rem
+      margin-right: 1rem
+      margin: auto 2rem
+      .work-box
+        padding: 1.5rem 0
+        border: none
+        border-width: 5px
+        .type-label
+          padding: 3px 7px
+
+          font-size: 1.7rem
+          display: none
+        p
+          font-size: 1.6rem
+        a
+          text-decoration: none
+          color: black
+          h2
+            font-size: 1.7rem
+            padding: 1rem 0 0
+            line-height: 2.3rem
+        &.no-image.no-iframe.no-html
+          grid-row: span 1!important
+        iframe
+          pointer-events: none
+        &.candusen-page
+          //grid-row: span 4
+        &.website
+          //grid-row: span 6
+        &.print, &.software, &.tape
+          //grid-column: span 8
+        iframe
+          z-index: -1
+  //grid-row: span 4
+.homepage
+  position: relative
+  margin: 0 0 2rem 0
+  .project-nav
+    //henry
+    display: none
+    // position: fixed
+    // width: 8rem
+    margin-bottom: 3rem
+    @include bp(lg)
+      position: fixed
+      top: 2.2rem
+      right: 1rem
+      width: calc(100vw - 3rem - 394px)
+      text-align: center
+      .filter-buttons
+        align-items: center!important
+        justify-content: center!important
+
+    @include bp(xs)
+      margin-left: 0
+      text-align: center
+      span.project-category, .filter-header
+        font-size: 2rem
+        line-height: 2.3rem
+        margin-left: 0
+        margin-bottom: 0
+
+    margin-left: 1rem
+    .filter-buttons
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: wrap
+      span:first-of-type
+        margin-left: 0
+      @include bp(xs)
+        justify-content: center
+        padding: 0 18%
+        max-width: 800px
+    .project-category
+      cursor: pointer
+      margin: 0 1rem
+      text-align: center
+      text-transform: capitalize
+
+  .project-grid-large-thumbs
+    display: grid
+    grid-auto-flow: row dense
+    grid-template-columns: repeat(auto-fit, 4rem)
+    grid-auto-rows: minmax(4rem, auto)
+    margin-right: 1rem
+    margin-left: 10rem
+    grid-gap: 2rem
+    .work-box
+      grid-column: span 4
+      border-color: transparent!important
+      border-style: solid
+      border-width: 2px
+      border-radius: 4px
+      display: inline-block
+      padding: 1rem
+      position: relative
+      transition: .3s all linear
+      display: grid
+      grid-gap: 1rem 0
+      grid-template-rows: 1fr auto
+      grid-template-rows: minmax(24rem,1fr) auto
+      align-items: stretch
+      word-break: break-word
+      a
+        text-decoration: none
+        color: black
+      &.no-image.no-iframe.no-html
+        grid-row: span 1!important
+      &:hover
+        h2
+          text-decoration: underline
+      p
+        margin: 0
+      h1 a
+        display: block
+        color: black
+      iframe
+        width: 100%
+        //min-height: 400px
+        z-index: 100
+      .project-img
+        width: 100%
+        height: 0
+        padding-bottom: 50%
+        height: 100%
+        padding-bottom: 0!important
+        background-size: cover!important
+        background-position: center!important
+      // &:hover
+        // border-width: 4px
+      .type-label
+        display: none
+      .type-label
+        position: absolute
+        top: -1rem
+        left: 1rem
+        border-radius: 10px
+        display: inline-block
+        padding: 2px 4px
+  @media(max-width: 480px)
+    .project-nav
+      .project-category
+        padding: .5rem
+        margin-right: 1rem
+        text-transform: lowercase
+        font-size: 1.7rem
+        outline: none
+
+.thumb-type-candusen-page
+  grid-column: span 1
+
+.project-grid
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-gap: 1rem 1rem
+  padding: 0 2rem
+  grid-auto-rows: calc( (100vw - 1rem - 3rem - (1rem * 11)) / 12)
+  grid-auto-flow: row dense
+  .thumb
+    position: relative
+    grid-column: span 2
+    grid-row: span 2
+    display: flex
+    flex-direction: column
+    padding: 1rem
+    @include bp(md)
+      grid-column: span 4
+      grid-row: span 4
+    @include bp(xs)
+      grid-column: span 12!important
+      grid-row: span 12!important
+      &.thumb-candusen
+        grid-column: span 4!important
+        grid-row: span 4!important
+
+    // transition: .3s all
+    &:hover
+      transform: scale(1.005)
+      // box-shadow: 1px 1px 32px -18px black
+    &.thumb-client
+      grid-column: span 4
+      grid-row: span 3
+    &.thumb-candusen, &.thumb-drawing
+      grid-column: span 1
+      grid-row: span 1
+      border: none
+      padding: 0
+      .thumb-image:after
+        border-radius: 12%
+    &.thumb-website, &.thumb-software
+      grid-column: span 4
+      grid-row: span 3
+    .thumb-title
+      display: block
+      // position: absolute
+      margin: .25rem 0px
+      line-height: 1.1
+      bottom: 100%
+      backdrop-filter: reverse
+      font-family: $mainFont
+      @include bp(xs)
+        word-break: break-word
+      &.inline-text
+        font-family: 'Swiss Thick'
+        color: white
+        z-index: 0
+      // top: 100%
+    .thumb-description
+      position: absolute
+      bottom: 0
+      display: none
+      opacity: 0
+    .thumb-label
+      @include round
+    .thumb-image
+      position: absolute
+      z-index: -1
+      width: 100%
+      background-size: contain
+      height: 100%
+      top: 0
+      left: 0
+
+
+#page
+  padding-top: 6rem
+  .candusen-page
+    .work-box, &.work-box
+      grid-column: span 6
+      //grid-row: span 6
+      grid-row: span 1
+      #{$thingToColor}: red
+    .color, &.color
+      background: red
+  .client-site
+    .work-box, &.work-box
+      grid-column: span 8
+      // grid-row: span 2
+      #{$thingToColor}: #3abc3a
+    .color, &.color
+      background: #3abc3a
+  .software
+    .work-box, &.work-box
+      grid-column: span 4
+      grid-row: span 1
+      #{$thingToColor}: #476fff
+    .color, &.color
+      background: #476fff
+  .website
+    .work-box, &.work-box
+      grid-column: span 8
+      // grid-row: span 2
+      #{$thingToColor}: orange
+    .color, &.color
+      background: orange
+  .print
+    .work-box, &.work-box
+      grid-column: span 8
+      grid-row: span 1
+      #{$thingToColor}: #ad54ff
+    .color, &.color
+      background: #ad54ff
+  .essay
+    .work-box, &.work-box
+      grid-column: span 8
+      grid-row: span 2
+      #{$thingToColor}: yellow
+    .color, &.color
+      background: yellow
+
+  .tape
+    .work-box, &.work-box
+      grid-column: span 8
+      grid-row: span 2
+      grid-row: span 1
+      #{$thingToColor}: pink
+    .color, &.color
+      background: pink
+.paper-page
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    z-index: -1
+    #info
+      #info-icon
+        text-align: center
+        line-height: 40px
+        font-size: 32px
+        width: 40px
+        height: 40px
+        position: fixed
+        z-index: 100
+        bottom: 10px
+        left: 10px
+        display: block
+        border: solid black 1px
+        border-radius: 50px
+        backdrop-filter: blur(3px)
+        font-family: 'Swiss Round'
+        cursor: pointer
+        transition: backdrop-filter .4s
+        &:hover
+          backdrop-filter: blur(5px)
+      #info-content
+        cursor: nw-resize
+        pointer-events: none
+        opacity: 0
+        height: 100vh
+        overflow: scroll
+        margin: 0 auto
+        backdrop-filter: blur(5px)
+        background: rgba(255,255,255,0.6)
+        background: linear-gradient(144deg, rgba(255, 171, 171, 1) 0%, rgba(157, 255, 157, 0.9) 50%, rgba(157, 157, 255, 0.9) 100%)
+        position: fixed
+        top: 0
+        left: 0
+        width: 50%
+        z-index: 100
+        max-width: none
+        padding: 0 25%
+        transition: opacity .4s
+        @include bp(xs)
+          width: 90%
+          padding: 0 5%
+        #info-content-wrapper
+          padding: 4em 0
+      &.show
+        #info-icon
+          display: block
+        #info-content
+          opacity: 1
+          pointer-events: all
+.paper-listing
+  .paper-preview-link
+    padding: .5em
+    position: absolute
+    z-index: 10
+.work-page, #info-content
+    max-width: 1000px
+    margin: 0 0 0 2rem
+    padding-bottom: 5rem
+    width: calc(100vw - 180px)
+    font-family: 'Swiss Normal'
+    @include bp(xs)
+      width: auto
+      margin: 0
+      padding: 0 2rem
+    .caption-container
+      position: relative
+      margin: 3rem 0
+      img,video, .gatsby-image-wrapper-constrained
+        @include rgbShadow
+        width: 100%
+        // box-shadow: grey 5px 5px 14px
+        &.gatsby-image-wrapper-constrained
+          img
+            position: absolute
+      .caption
+        @extend p
+        font-size: 1.2rem
+        text-align: left
+    #iframe-wrapper-static-site
+      height: 0
+      padding-bottom: 100%
+      position: relative
+      iframe
+        outline: none
+        border: none
+        position: absolute
+        top: 0
+        left: 0
+
+    .work-iframe
+      position: relative
+      margin-top: 12rem
+      margin-bottom: 8rem
+      @include bp(xs)
+        display: none
+      .iframe-cover
+        @include wrapper
+        height: calc(100% - 15px)
+        backdrop-filter: blur(0px)
+        transition: backdrop-filter .3s, color .3s
+        color: transparent
+        display: flex
+        flex-direction: column
+        text-align: center
+        cursor: pointer
+        align-items: center
+        justify-content: center
+        &:hover
+          backdrop-filter: blur(4px)
+          color: black
+        &.clicked
+          pointer-events: none
+          transition: backdrop-filter .3s, color .3s
+          color: transparent
+      .work-iframe-link
+        @include round
+      @include bp(lg)
+        .site-label-top-left
+          &:before
+            top: -105px!important
+            left: -105px!important
+            width: 100px!important
+            height: 100px!important
+        &:before
+          top: -105px !important
+          right: -105px !important
+          width: 100px !important
+          height: 100px !important
+          transform: rotate(90deg)
+          left: auto!important
+      &:before
+        content: ""
+        position: absolute
+        top: -85px
+        left: -85px
+        width: 80px
+        height: 80px
+        background-image: url("../img/iframe-arrow.png")
+        background-size: contain
+        background-repeat: no-repeat
+    .work-title
+      padding-bottom: 1rem
+      font-family: "Swiss Normal"
+    .work-url a
+      @include round
+      color: $blue
+      &:hover
+        color: $red
+        text-decoration: none
+      border-bottom: solid $green 2px
+      display: inline-block
+      border-bottom-style: rounded
+    .work-header
+      display: flex
+      align-items: baseline
+      justify-content: space-between
+      @include bp(xs)
+        flex-direction: column
+    .work-description
+      padding: 0rem 2rem 0rem 0
+      @include bp(xs)
+        margin-top: 2rem
+    .mobile-video-cover, [classname="mobile-video-cover"]
+      position: relative
+      video
+        width: 100%
+      &.clicked
+        &:after
+          backdrop-filter: blur(0px)
+          color: transparent
+      &:after
+        @include wrapper
+        content: "Play video"
+        z-index: 1
+        pointer-events: none
+        transition: backdrop-filter .3s, color .3s
+        backdrop-filter: blur(0px)
+        color: transparent
+        font-size: 2rem
+        font-family: $bookFont
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        @include bp(mobile)
+          color: black
+          backdrop-filter: blur(4px)
+    .work-images
+      margin: 6rem 0
+      .videowrapper, .work-image
+        position: relative
+        @include rgbShadow
+        margin-bottom: 6rem
+        img, video
+          position: relative
+          max-width: 100%
+    p
+      img
+        margin: 0 auto
+        max-width: 100%
+        display: block
+    .product
+      .add-to-cart
+        cursor: pointer
+        &:hover
+          color: #364497
+          animation: underline-rgb-sparkle 1s
+          span
+            @include span-text-rgb-sparkle(.3s)
+#other-work
+  padding: 2em
+  #other-work-list
+    overflow-x: scroll
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .other-work-item
+      margin: 1em
+      display: inline-block
+  .other-work-item-image
+    width: 300px
+.block-text
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: underline
+      text-decoration-line: overline
+      position: relative
+      &:after
+        content: ">"
+        position: absolute
+        top: -0.23em
+        right: -0.3em
+        height: 0.6em
+        line-height: 0.3em
+        font-size: 0.8em
+.paper-nav
+  position: absolute
+  bottom: 1.5rem
+  left: 1.5rem
+  z-index: 10
+  .next, .previous
+    width: 50px
+    height: 50px
+    display: inline-block
+    margin: 0 1em
+    cursor: pointer
+    color: transparent
+  .previous
+    @include sprite(4)
+    background-position: 57%
+  .next
+    @include sprite(5)
+    background-position: 71.3%
+.help-container
+  position: absolute
+  bottom: 1.5rem
+  right: 1.5rem
+  z-index: 10
+  text-align: right
+  .toggle
+    cursor: pointer
+  .help
+    opacity: 0
+    transition: opacity .2s
+  &.active
+    .help
+      opacity: 1
+  div
+    margin: 1rem 0
+  .arrows
+    width: 40px
+    vertical-align: text-bottom
+    margin: 0 0.1em 0 0.4em
+  .key
+    border-radius: 20%
+    border: solid black 1px
+    // background: #476fff
+    color: black
+    padding: 1px 4px
+
+.styleguide
+  display: none
+.spreadsheet
+  // margin: 0 auto
+  border-spacing: 0
+  thead
+    @extend h3
+  td
+    border: none!important
+    padding: 0!important
+    vertical-align: bottom
+
+    &:nth-child(2), &:nth-child(3)
+      @extend .h6
+      margin: 0
+      padding: 0
+.canvasContainer
+  height: 0
+  padding-bottom: 100vh
+  &:before, &:after
+    z-index: -1
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  canvas
+    position: absolute
+    &.fullscreen
+      z-index: 20
+      background: white
+
+.navbar
+  position: fixed
+  #nav-main-link
+    color: #DB3932
+    text-decoration-color: #4F9851
+    margin: 2rem 0 0 2rem
+    span
+      font-size: inherit
+      line-height: inherit
+
+    &:hover
+      color: #364497
+      animation: underline-rgb-sparkle 1s
+      span
+        @include span-text-rgb-sparkle(.3s)
+  background: transparent
+  // position: fixed
+  z-index: 26
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: row
+  align-items: baseline
+  .email
+    border: none
+    background: white
+    margin-left: 1em
+    cursor: pointer
+    position: fixed
+    bottom: 2rem
+    right: 2rem
+  @include bp(xs)
+    display: flex
+  .header
+    margin: 0
+    font-size: 2rem
+    line-height: 2rem
+  &.is-active
+    .container
+      opacity: 1
+  .container
+    opacity: 0
+    margin-left: 3rem
+  .nav-icon
+    @include sprite(0)
+    display: inline-block
+    width: 2rem
+    height: 1.5rem
+    outline: none
+    cursor: pointer
+    &.cart-mode
+      width: 4rem
+      height: 2.9rem
+      transform: translate(10px,-11px)
+
+.navbar-item
+  padding: 0
+  &.navbar-icon
+    position: fixed
+    top: 3.1rem
+    right: 2rem
+    top: 2rem
+    right: 2rem
+  &:nth-child(1)
+      color: red
+  &:nth-child(2)
+      color: red
+      &:hover
+        animation: $fadeRGB
+  &:nth-child(3)
+      color: #3abc3a
+      &:hover
+        animation: $fadeRGB
+  &:nth-child(4)
+      color: #476fff
+      &:hover
+        animation: $fadeRGB
+  img
+    max-height: none
+    width: 138px
+  &.active
+    animation: $fadeRGB
+    text-decoration: underline
+
+
+// responsiveness
+// +tablet-only
+//   .blog-list-item .featured-thumbnail
+//     flex-basis: 50%
+//
+// +mobile
+//   .blog-list-item header
+//     display: block
+//   .blog-list-item .featured-thumbnail
+//     text-align: center
+//     max-width: 70%
+//     margin: 0 0 1em

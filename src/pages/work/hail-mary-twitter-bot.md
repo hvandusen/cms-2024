@@ -17,7 +17,8 @@ postContent:
       performers played the score each day. Launched at the Front 2022
       triennial.</p>
   - type: image
-    image: https://rgbsystems.net/static/82c344fa2eaf26deef25f4ce1ac83bed/dff81/Screen_Shot_2022_06_27_at_2_36_17_PM_8f983bd5a9.webp
+    image:
+      - https://res.cloudinary.com/candusen/image/upload/v1707082155/Screen_Shot_2022_06_27_at_2_36_17_PM_8f983bd5a9_y5fx3i.webp
     caption: Bell curve equation used to randomly generate some values in the algorithm
   - type: text
     text: '<p>More info here: <a

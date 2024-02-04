@@ -2,12 +2,11 @@
 templateKey: work
 title: Hail Mary Twitter Bot
 type: software
-featuredimage: https://rgbsystems.net/static/7d79be75a9a82ef17409c7d77f91f8d3/7069b/Screen_Shot_2022_07_28_at_7_53_44_AM_659c8079c6.webp
+featuredimage:
+  - https://res.cloudinary.com/candusen/image/upload/v1707082134/Screen_Shot_2022_07_28_at_7_53_44_AM_659c8079c6_hbg18t.webp
 featured: false
 draft: false
 postContent:
-  - type: image
-    image: https://rgbsystems.net/static/f1e0814c11d30ae9427be7248d8eeb43/b2982/Screen_Shot_2022_07_28_at_7_59_37_AM_7838fc51b9.webp
   - type: text
     text: <p>We worked with Cory Arcangel's studio to produce Hail Mary, an
       algorithmic composition <a

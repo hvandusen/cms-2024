@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: Candusen.com
+title: candusen.com
 type: Website
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1694094519/Screenshot_2023-09-07_at_9.48.06_AM_njedwp.png

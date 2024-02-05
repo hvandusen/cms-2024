@@ -29,7 +29,7 @@ postContent:
       - https://res.cloudinary.com/candusen/image/upload/v1707086734/Screen_Shot_2022_05_07_at_11_03_35_AM_5b72d693c6_g2ye9i.webp
     caption: >
       Extremely printer-friendly. We love to make your printer-friendly projects!
-date: 2024-02-04T22:43:11.327Z
-date-finish: 2024-02-04T22:43:11.332Z
+date: 2019-02-04T22:43:11.327Z
+date-finish: 2019-02-08T22:43:11.332Z
 url: nyartist.coryarcangel.com
 ---

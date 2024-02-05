@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: Lorien Stern
+title: lorienstern.com
 type: client site
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1706716285/Screenshot_2024-01-31_at_10.37.36_AM_alc8nx.png

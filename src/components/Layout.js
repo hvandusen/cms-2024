@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 // import Cart from '../components/Cart'
-import './all.sass'
+import './all.scss'
 // import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 // import { useShoppingCart } from 'use-shopping-cart'
@@ -47,10 +47,10 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content="Henry Van Dusen" />
         <meta property="og:url" content="/" />
-        <meta
+        {/* <meta
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
-        />
+        /> */}
       </Helmet>
       {/* <Cart cartcount={cartCount}/> */}
       <Navbar />

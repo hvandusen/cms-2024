@@ -3,7 +3,7 @@ templateKey: work
 title: stroll-garden.com
 type: client site
 featuredimage:
-  - https://res.cloudinary.com/candusen/video/upload/v1707087966/stroll_garden_splash_nav_artists_exhibtions_scroll_95c9151de8_ka8n9h.mp4
+  - https://res.cloudinary.com/candusen/image/upload/v1707088343/Screenshot_2024-02-04_at_6.12.10_PM_x6ktlt.png
 featured: false
 draft: false
 description: We worked with Stroll Garden, an art gallery in LA, to design and

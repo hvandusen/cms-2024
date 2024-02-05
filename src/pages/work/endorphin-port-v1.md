@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: Endorphin Port v1
+title: endorphinport.com v1
 type: Website
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1707088668/Screenshot_2024-02-04_at_6.17.32_PM_slyu3q.png

@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: As It Stands . LA
+title: asitstands.la
 type: client site
 featured: false
 draft: false

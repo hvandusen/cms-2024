@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: RGB Systems website
+title: rgbsystems.net
 type: Website
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1694097735/Screenshot_2023-09-07_at_10.41.09_AM_gdf0d9.png

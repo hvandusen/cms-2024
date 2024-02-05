@@ -22,9 +22,11 @@ const Thumb = ({work,filter}) =>{
   }
   switch(workType){
     default:
-    return <Link to={work.fields.slug} className={theClass+" wrappler"} style={thumbSize}>
-      <span className="thumb-label color">{workType === 'Candusen page' ? "fun" : workType}</span>
-      <p className="thumb-title">{fm.title.replace(".com"," . com")}</p>
+    return <Link to={work.fields.slug} className={theClass+" wrapper"} style={thumbSize}>
+      <div className="thumb-top">
+        <span className="thumb-label color">{workType === 'Candusen page' ? "fun" : workType}</span>
+        <p className="thumb-title">{fm.title.replace(".com"," . com")}</p>
+      </div>
       <p className="thumb-description">{fm.description}</p>
       {bgImg ?
         <BackgroundImage
@@ -32,8 +34,8 @@ const Thumb = ({work,filter}) =>{
           className="thumb-image"
           preserveStackingContext
           style={{
-            backgroundSize: "contain",
-            backgroundPosition: "top",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             backgroundImage: `url(${bgImg ? '' : img.images.fallback.src})`
           }}>
       </BackgroundImage> :
@@ -43,7 +45,7 @@ const Thumb = ({work,filter}) =>{
 
     </Link>
     case "Candusen page":
-      return <Link to={work.fields.slug} className={(theClass)+" wrappler"} style={{
+      return <Link to={work.fields.slug} className={(theClass)+" wrapper"} style={{
           transform: `rotate(${num(20)} translate(${num(40)-20}px,${num(40)-20}px)`
         }}>
         {bgImg ?
@@ -62,7 +64,7 @@ const Thumb = ({work,filter}) =>{
       }
       </Link>
     case "Drawing":
-      return <Link to={work.fields.slug} className={(theClass)+" wrappler"}>
+      return <Link to={work.fields.slug} className={(theClass)+" wrapper"}>
         {bgImg ?
           <BackgroundImage
             // Spread bgImage into BackgroundImage:
@@ -70,7 +72,7 @@ const Thumb = ({work,filter}) =>{
             className="thumb-image"
             preserveStackingContext
             style={{
-              backgroundSize: "cover",
+              backgroundSize: "contain",
               backgroundImage: `url(${bgImg ? '' : img.images.fallback.src})`
             }}
           >

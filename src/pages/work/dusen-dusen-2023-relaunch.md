@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: Dusen Dusen 2023 Relaunch
+title: dusendusen.com relaunch
 type: client site
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1691112260/Screenshot_2023-08-03_at_9.24.01_PM_gvrr9z.png
@@ -46,7 +46,7 @@ postContent:
       - https://res.cloudinary.com/candusen/image/upload/v1691111758/Screenshot_2023-08-03_at_9.13.47_PM_fyo4a8.png
     caption: The shop page has some positively enormous menus, with filters and all
       that kinda stuff.
-date: 2022-06-08T22:16:40.619Z
+date: 2023-05-08T22:16:40.619Z
 date-finish: 2023-06-02T22:16:40.630Z
 display_url: dusendusen.com
 tags: []

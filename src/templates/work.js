@@ -53,6 +53,7 @@ const WorkTemplate = ({
   return (
     <div id="work-page-wrapper">
     <section className="section work-page">
+      {/* add an og:image meta tag to the page which is the featured image */}
       {helmet || ''}
       <div className="container content">
         <div className="work-header">
@@ -101,7 +102,7 @@ const WorkTemplate = ({
         {other.edges.filter(({node: work})=> (!!!work.frontmatter.draft && work.fields.slug !== slug)).map(({node: work},i)=>
           <a key={i} className="other-work-item" href={work.fields.slug}>
             <p key={i} className="other-work-item-title">{work.frontmatter.title}</p>
-            {work.featuredImg && <div className="other-work-item-image"><GatsbyImage objectFit="contain" image={work.featuredImg.childImageSharp.gatsbyImageData} alt={"we testin"} /></div>}
+            {work.featuredImg && <div className="other-work-item-image"><GatsbyImage objectFit="contain" image={work.featuredImg?.childImageSharp?.gatsbyImageData} alt={"we testin"} /></div>}
           </a>
         )}
         </div>
@@ -165,6 +166,10 @@ const Work = ({ data }) => {
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
+            />
+            <meta
+              name="og:image"
+              content={post.featuredImg.childImageSharp.gatsbyImageData.images.fallback.src}
             />
           </Helmet>
         }

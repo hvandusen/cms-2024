@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: Candusen.net
+title: candusen.net
 type: Website
 featured: false
 draft: false

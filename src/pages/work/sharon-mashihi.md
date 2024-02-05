@@ -1,6 +1,6 @@
 ---
 templateKey: work
-title: Sharon Mashihi
+title: sharonmashihi.com
 type: client site
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1706805995/Screenshot_2024-02-01_at_11.46.17_AM_znlcxt.png

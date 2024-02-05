@@ -7,6 +7,9 @@ featuredimage:
 featured: false
 draft: false
 postContent:
+  - type: image
+    image:
+      - https://res.cloudinary.com/candusen/image/upload/v1707082141/Screen_Shot_2022_07_28_at_7_59_37_AM_7838fc51b9_fep5ut.webp
   - type: text
     text: <p>We worked with Cory Arcangel's studio to produce Hail Mary, an
       algorithmic composition <a

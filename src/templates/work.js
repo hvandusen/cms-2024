@@ -169,7 +169,7 @@ const Work = ({ data }) => {
             />
             <meta
               name="og:image"
-              content={post.featuredImg.childImageSharp.gatsbyImageData.images.fallback.src}
+              content={post.featuredImg?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
             />
           </Helmet>
         }

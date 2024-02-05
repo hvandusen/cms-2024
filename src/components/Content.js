@@ -36,7 +36,7 @@ export const Blocks = ({ postContent, images }) => {
         dangerouslySetInnerHTML={{__html: md(block.text)}}>
         </p>;
       case "image":
-          return images[imagesUsed++] && images[imagesUsed++].childImageSharp ? (<div key={i} className='caption-container image-caption block block-image work-image'>
+          return !!images[imagesUsed++] && images[imagesUsed++].childImageSharp ? (<div key={i} className='caption-container image-caption block block-image work-image'>
               <GatsbyImage image={images[imagesUsed++].childImageSharp.gatsbyImageData} alt="" />
             {block.caption && <div className='caption'>{block.caption}</div>}
             </div>) : "";

@@ -25,7 +25,7 @@ postContent:
       - https://res.cloudinary.com/candusen/image/upload/v1707089209/epochemagazine_index_a504365e36_yreftu.webp
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/video/upload/v1707089186/epochemagazine_home_archive_article_ea3e0125a3_silsb6.mp4
+      - https://res.cloudinary.com/candusen/image/upload/v1707089209/epochemagazine_index_a504365e36_yreftu.webp
     caption: Archive page; issue page.
 date: 2019-04-12T22:23:13.139Z
 date-finish: 2019-04-24T22:23:00.000Z

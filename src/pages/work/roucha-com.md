@@ -3,7 +3,7 @@ templateKey: work
 title: roucha.com
 type: client site
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707085201/Screenshot_2024-02-04_at_5.19.53_PM_kkpm7s.png
+  - https://res.cloudinary.com/candusen/image/upload/v1707085353/roucha_splash_image_pop_98ea995add_rmkku3.webp
 featured: false
 draft: false
 description: >

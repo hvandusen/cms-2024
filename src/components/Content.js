@@ -33,23 +33,27 @@ export const Blocks = ({ postContent, images }) => {
       case "text":
         console.log(block.text)
         return <p key={i} className={"block block-text work-text"}
-        dangerouslySetInnerHTML={{__html: md(block.text)}}>
+        dangerouslySetInnerHTML={{__html: block.text ? md(block.text) : ""}}>
         </p>;
       case "image":
-        
-          return (typeof images[imagesUsed+1] !== "undefined" && !!images[imagesUsed+1]) ? 
+        console.log({block})
+          return (images && typeof images[imagesUsed+1] !== "undefined" && !!images[imagesUsed+1]) ? 
           (<div key={i} className='caption-container image-caption block block-image work-image'>
               <GatsbyImage image={images[imagesUsed++].childImageSharp.gatsbyImageData} alt="" />
             {block.caption && <div className='caption'>{block.caption}</div>}
-            </div>) : "";
+            </div>) : (block.image?.length ? (
+            <div key={i} className='caption-container image-caption block block-image work-image'>
+                <img src={block.image[0]} alt="" />
+                {block.caption && <div className='caption'>{block.caption}</div>}
+            </div>) : "");
 
       case "video":
-        return <div key={i} className={"caption-container block block-video work-video videowrapper"}>
+        return block?.video?.length ? (<div key={i} className={"caption-container block block-video work-video videowrapper"}>
           <div className="mobile-video-cover">
             <video playsInline webkit-playsinline="true" autoPlay loop muted key={i} src={block.video[0]}></video>
             </div>
             {block.caption && <div className='caption'>{block.caption}</div>}
-          </div>
+          </div>) : "";
       case "youtube":
         return <div key={i} className={"caption-container block block-video work-video videowrapper"}>
           <div className="mobile-video-cover">
@@ -61,7 +65,7 @@ export const Blocks = ({ postContent, images }) => {
         return <div key={i} className={"block block-code work-code"}>code</div>
 
       default:
-
+            return "";
     }
   });
 }

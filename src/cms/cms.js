@@ -2,13 +2,17 @@ import CMS from 'decap-cms-app'
 // import uploadcare from 'decap-cms-media-library-uploadcare'
 import cloudinary from 'decap-cms-media-library-cloudinary'
 
-// import AboutPagePreview from './preview-templates/AboutPagePreview'
+import * as scss from '!css-loader!sass-loader!../components/all.scss'
+
+import WorkPagePreview from './preview-templates/WorkPagePreview'
 // import BlogPostPreview from './preview-templates/BlogPostPreview'
 // import ProductPagePreview from './preview-templates/ProductPagePreview'
 // import IndexPagePreview from './preview-templates/IndexPagePreview'
+CMS.registerPreviewTemplate("work", WorkPagePreview);
+CMS.registerPreviewStyle(scss.default.toString(), { raw: true });
 
 // CMS.registerMediaLibrary(uploadcare)
-CMS.registerMediaLibrary(cloudinary)
+CMS.registerMediaLibrary(cloudinary) 
 
 function block(obj){
     if(obj.img)

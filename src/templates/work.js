@@ -4,12 +4,11 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import { useShoppingCart } from "use-shopping-cart"
 import Content, { HTMLContent, Blocks } from '../components/Content'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // const ensureHttp = (str) => str && (str.indexOf("http")> - 1 ? str : "https://"+ str).replace("http://","https://")
-const spanify = (str) => str.split("").map((char,i)=> <span key={i}>{char}</span>)
+// const spanify = (str) => str.split("").map((char,i)=> <span key={i}>{char}</span>)
 
 const WorkTemplate = ({
   content,
@@ -35,7 +34,6 @@ const WorkTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
   const formatCurrency = (price) => `$${price/100}`
-  console.log({PostContent});
   const img = getImage(featuredImg)
   let [iframeClicked,setIframeClicked] = useState("")
   const iframeCoverClicked = (e) => setIframeClicked("clicked")
@@ -58,7 +56,7 @@ const WorkTemplate = ({
       <div className="container content">
         <div className="work-header">
           <h5 className="title is-size-2 has-text-weight-bold is-bold-light work-title">
-            {title.replace(".com"," . com")}
+            {title?.replace(".com"," . com")}
           </h5>
           { !!url  ? (<div className="work-url"><a href={displayURL} target="_blank" rel="noreferrer">{displayURL}</a></div>) : ""}
         </div>
@@ -96,7 +94,7 @@ const WorkTemplate = ({
       </div>
     </section>
     <section className="section other-work">
-      {other.edges.length > 2 && <div id="other-work">
+      {other && other.edges.length > 2 && <div id="other-work">
         <h3>More {type.toLowerCase()}s:</h3>
         <div id="other-work-list">
         {other.edges.filter(({node: work})=> (!!!work.frontmatter.draft && work.fields.slug !== slug)).map(({node: work},i)=>
@@ -121,25 +119,10 @@ WorkTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const getProduct = (allStripePrice,price_id) => {
-  if(!allStripePrice || !price_id)
-    return {}
-  const prices = allStripePrice.edges.map(e => e.node)
-  const price = prices.find((p)=>p.id === price_id)
-  const product = price.product
-  product.image = product.images[0]
-  product.price = price.unit_amount
-  product.price_id = price.id
-  product.currency = "USD"
-  delete product.id
-  return product
-}
-
 const Work = ({ data }) => {
-  const { markdownRemark: post } = data
-  const { allStripePrice, other } = data
-  const mode = data.site.siteMetadata.gatsby_env
-  let price_id = post.frontmatter[`price_${(mode === "development" ? 'test_':'')}id`]
+  const { markdownRemark: post, other } = data
+  const mode = data?.site?.siteMetadata.gatsby_env
+//   let price_id = post.frontmatter[`price_${(mode === "development" ? 'test_':'')}id`]
   // const product = getProduct(allStripePrice, price_id)
   return (
     <Layout>

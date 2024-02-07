@@ -7,11 +7,14 @@ import './all.scss'
 // import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 // import { useShoppingCart } from 'use-shopping-cart'
-
+// const netlifyIdentity = require('netlify-identity-widget');
 const TemplateWrapper = ({ children }) => {
   // const {cartCount} = useShoppingCart()
 
   // const { title, description } = useSiteMetadata()
+//   useEffect(() => {
+//     netlifyIdentity.init();  
+//   }, []);
   return (
     <div>
       <Helmet>

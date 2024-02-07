@@ -12,7 +12,10 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-sass",
+        resolve: "gatsby-plugin-sass",
+        options: {
+          useResolveUrlLoader: true,
+        },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support

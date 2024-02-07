@@ -28,6 +28,7 @@
     "gbimage-bridge": "^0.2.2",
     "lodash": "^4.17.15",
     "lodash-webpack-plugin": "^0.11.4",
+    "netlify-identity-widget": "^1.9.2",
     "node-polyfill-webpack-plugin": "^3.0.0",
     "prop-types": "^15.6.0",
     "react": "^17.0.0",
@@ -54,7 +55,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "resolve-url-loader": "^5.0.0"
   },
   "engines": {
     "node": ">= 14.15.0"

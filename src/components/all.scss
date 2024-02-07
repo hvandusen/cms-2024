@@ -2,6 +2,14 @@
 @import 'WorkTypeColors';
 @import 'mixins';
 @import 'paperAddOns';
+
+
+
+// import ../../static/fonts/swiss-721-normal.woff" and
+// ../../static/fonts/swiss-721-normal.ttf"
+
+
+
 $thingToColor: 'border-color';
 @keyframes rgbFade {
   0% {
@@ -73,49 +81,44 @@ $thingToColor: 'border-color';
 
 @font-face {
   font-family: "Swiss Medium";
-  src: url("/fonts/swiss-721-medium.woff") format("woff");
-  src: url("/fonts/swiss-721-medium.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-medium.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Normal";
-  src: url("/fonts/swiss-721-normal.woff") format("woff");
-  src: url("/fonts/swiss-721-normal.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-normal.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-normal.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Condensed";
-  src: url("/fonts/swiss-721-Condensed.woff") format("woff");
-  src: url("/fonts/swiss-721-Condensed.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Swiss Light";
-  src: url("/fonts/swiss-721-light.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-Condensed.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-Condensed.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Round";
-  src: url("/fonts/swiss-721-bold-rounded.woff") format("woff");
-  src: url("/fonts/swiss-721-bold-rounded.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-bold-rounded.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-bold-rounded.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Extended";
-  src: url("/fonts/swiss-721-extended.woff") format("woff");
-  src: url("/fonts/swiss-721-extended.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-extended.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-extended.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Outline";
-  src: url("/fonts/swiss-721-outline.woff") format("woff");
-  src: url("/fonts/swiss-721-outline.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-outline.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-outline.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Thick";
-  src: url("/fonts/swiss-721-thick.woff") format("woff");
-  src: url("/fonts/swiss-721-thick.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-thick.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-thick.ttf") format("truetype");
 }
 
 $mainFont: "Swiss Medium";
@@ -123,6 +126,10 @@ $boldFont: 'Az-Medium';
 $bookFont: "Swiss Normal";
 $italicFont: 'Az-Italic';
 $fadeRGB: rgbFade 3s linear infinite;
+
+.editortest {
+    color: red;
+}
 
 @mixin round {
   font-size: 1rem;

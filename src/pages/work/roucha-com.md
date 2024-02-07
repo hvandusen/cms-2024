@@ -47,7 +47,7 @@ postContent:
     video:
       - https://res.cloudinary.com/candusen/video/upload/v1707085417/roucha_grid_template2_d6a59fa9d0_g6icbu.mp4
     caption: Custom collection template, with a special and fun hover trail :)
-date: 2024-02-04T22:18:43.448Z
-date-finish: 2024-02-04T22:18:43.454Z
+date: 2022-02-04T22:18:43.448Z
+date-finish: 2022-02-04T22:18:43.454Z
 url: roucha.com
 ---

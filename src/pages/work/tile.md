@@ -10,36 +10,37 @@ date: 2023-01-03T17:20:20.803Z
 date-finish: 2023-01-03T17:20:00.000Z
 paper_code:
   code: >-
+  
     window.paper.project = project;
 
+    function randomColor(){
+        return "rgb("+num(256)+","+num(256)+","+num(256)+")"
+    }
 
-    let randomColor = () => `rgb(${[num(256),num(256),num(256)].join()})`
-
-
-    const sample = (array) => {
+    function sample(array){
       return array[Math.floor(Math.random()*array.length)];
     }
 
-
-    let biggestSquare = new Path.Rectangle(0,0,100,100);
+    var biggestSquare = new Path.Rectangle(0,0,100,100);
 
     biggestSquare.fitBounds(view.bounds);
 
-
-    let positions = ["topLeft","topCenter","topRight","leftCenter","center","rightCenter","bottomLeft","bottomCenter","bottomRight",];
-
-
-    let positionIn = (bounds) => bounds[sample(positions)];
+    var positions = ["topLeft","topCenter","topRight","leftCenter","center","rightCenter","bottomLeft","bottomCenter","bottomRight"];
 
 
-    let pathFromPointsInSpace = (n,space) => {
-      let path = new Path();
-      path.fillColor = prettyRaCo(); //randomColor();//
-      let pos = positions.slice();
-      for (let index = 0; index < n; index++) {
-        let samp = sample(pos);
+    function positionIn(bounds){
+        bounds[sample(positions)]
+    };
+
+
+    function pathFromPointsInSpace(n,space){
+      var path = new Path();
+      path.fillColor = prettyRaCo(); 
+      var pos = positions.slice();
+      for (var index = 0; index < n; index++) {
+        var samp = sample(pos);
         path.add(space[samp]);
-        pos = pos.filter((p) => p!==samp);
+        pos = pos.filter(function(p){ return p!==samp; });
       }
       return path;
     }
@@ -47,45 +48,49 @@ paper_code:
     console.log(paper.view.bounds)
 
 
-    let fillers = [
-      (space) => { //circle
-        let path = new Path.Circle(space.center,space.width/2);
+    var fillers = [
+      function (space){
+        var path = new Path.Circle(space.center,space.width/2);
         path.fillColor = prettyRaCo();
         path.scale([.5,.25,1,.75][num(4)],positionIn(space));
         return path;
       },
-      (space) => { //square/rect
+      function (space){ 
         return pathFromPointsInSpace(3,space);
       },
-      (space) => { //triangle
+      function (space){ 
         return pathFromPointsInSpace(4,space);
-      },
-    ]
+      }
+    ];
 
 
-    function pattern(space=biggestSquare.bounds){
+    
+    function pattern(space){
+        if(!space){
+            space = biggestSquare.bounds
+        }
       project.activeLayer.clear();
-      let group = new Group();
-      let shapes = 1 + num(6);
-      let bg = new Path.Rectangle(space.topLeft,space.size);
+      var group = new Group();
+      var shapes = 1 + num(6);
+      var bg = new Path.Rectangle(space.topLeft,space.size);
       bg.fillColor = prettyRaCo();
       bg.strokeColor = "transparent";
-      for (let index = 0; index < shapes; index++) {
+      for (var index = 0; index < shapes; index++) {
         group.children.push(fillers[num(fillers.length)](space));
       }
       bg.sendToBack();
       group.children.unshift(bg);
       return group;
     }
+    
 
-
-    function tilify(p,iterations=0,bounds=view.bounds){
-      let fitter = new Size(Math.max(bounds.width,bounds.height),Math.max(bounds.width,bounds.height));
-      let g = new Group();
+    function tilify(p,iterations){
+      var fitter = new Size(Math.max(view.bounds.width,view.bounds.height),Math.max(view.bounds.width,view.bounds.height));
+      var g = new Group();
       g.children.push(p)
       p.fitBounds(fitter);
-      for (let index = 0; index < 3; index++) {
-        let copy = p.clone();
+      for (var index = 0; index < 3; index++) {
+        var copy = p.clone();
         copy.rotate(90,[fitter.width,0]);
         g.children.push(copy);
         p = copy;
@@ -94,13 +99,13 @@ paper_code:
     }
 
 
-    function mirrorify(p,iterations=0,bounds=view.bounds){
-      let fitter = new Size(Math.max(bounds.width,bounds.height),Math.max(bounds.width,bounds.height));
-      let g = new Group();
+    function mirrorify(p,iterations){
+      var fitter = new Size(Math.max(view.bounds.width,view.bounds.height),Math.max(view.bounds.width,view.bounds.height));
+      var g = new Group();
       g.children.push(p)
       p.fitBounds(fitter);
 
-      let copy = p.clone(); //UP
+      var copy = p.clone(); //UP
       copy.scale(1,-1);
       copy.position = copy.position - [0,copy.bounds.height];
       g.children.push(copy);
@@ -122,9 +127,9 @@ paper_code:
     }
 
 
-    function tileAndMirror(p,iterations=0,bounds=view.bounds){
-      let parity = Math.random() > .5 ? 1 : 0;//iterations % 2;
-      let g;
+    function tileAndMirror(p,iterations){
+      var parity = Math.random() > .5 ? 1 : 0;
+      var g;
       if(parity === 0){
         g = mirrorify(p,0);
       } else {
@@ -145,6 +150,6 @@ paper_code:
 
 
     function draw(){
-      [tileAndMirror,tilify,mirrorify][num(3)](pattern(),3+num(3));
+       [tileAndMirror,tilify,mirrorify][num(3)](pattern(),3+num(3));
     }
 ---

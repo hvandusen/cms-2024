@@ -5,8 +5,8 @@
 
 
 
-// import /fonts/swiss-721-normal.woff" and
-// /fonts/swiss-721-normal.ttf"
+// import ../../static/fonts/swiss-721-normal.woff" and
+// ../../static/fonts/swiss-721-normal.ttf"
 
 
 
@@ -34,91 +34,91 @@ $thingToColor: 'border-color';
 
 @font-face {
   font-family: 'Aktiv';
-  src: url('/fonts/AktivGrotesk.ttf')   format('truetype');
+  src: url('../../static/fonts/AktivGrotesk.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: 'Haptik';
-  src: url('/fonts/GT-Haptik-Regular.ttf')   format('truetype');
+  src: url('../../static/fonts/GT-Haptik-Regular.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: 'Az-Regular';
-  src: url('/fonts/AkzidenzGrotesk-Regular.ttf')   format('truetype');
+  src: url('../../static/fonts/AkzidenzGrotesk-Regular.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: 'Az-Medium';
-  src: url('/fonts/AkzidenzGrotesk-Medium.ttf')   format('truetype');
+  src: url('../../static/fonts/AkzidenzGrotesk-Medium.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: 'Az-Bold';
-  src: url('/fonts/AkzidenzGrotesk-Bold.ttf')   format('truetype');
+  src: url('../../static/fonts/AkzidenzGrotesk-Bold.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: 'Az-Italic';
-  src: url('/fonts/AkzidenzGrotesk-Italic.ttf')   format('truetype');
+  src: url('../../static/fonts/AkzidenzGrotesk-Italic.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: 'Newzald';
-  src: url('/fonts/Newzald-Book.otf')   format('opentype');
+  src: url('../../static/fonts/Newzald-Book.otf')   format('opentype');
   font-weight: normal !important;
 }
 
 @font-face {
   font-family: 'mtdbt2f';
-  src: url('/fonts/mtdbt2f-f.ttf')   format('truetype');
-  src: url('/fonts/mtdbt2f-f.woff')   format('woff');
+  src: url('../../static/fonts/mtdbt2f-f.ttf')   format('truetype');
+  src: url('../../static/fonts/mtdbt2f-f.woff')   format('woff');
 }
 
 @font-face {
   font-family: 'Aktiv';
-  src: url('/fonts/AktivGrotesk.ttf')   format('truetype');
+  src: url('../../static/fonts/AktivGrotesk.ttf')   format('truetype');
 }
 
 @font-face {
   font-family: "Swiss Medium";
-  src: url("/fonts/swiss-721-medium.woff") format("woff");
-  src: url("/fonts/swiss-721-medium.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-medium.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Normal";
-  src: url("/fonts/swiss-721-normal.woff") format("woff");
-  src: url("/fonts/swiss-721-normal.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-normal.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-normal.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Condensed";
-  src: url("/fonts/swiss-721-Condensed.woff") format("woff");
-  src: url("/fonts/swiss-721-Condensed.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-Condensed.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-Condensed.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Round";
-  src: url("/fonts/swiss-721-bold-rounded.woff") format("woff");
-  src: url("/fonts/swiss-721-bold-rounded.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-bold-rounded.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-bold-rounded.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Extended";
-  src: url("/fonts/swiss-721-extended.woff") format("woff");
-  src: url("/fonts/swiss-721-extended.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-extended.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-extended.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Outline";
-  src: url("/fonts/swiss-721-outline.woff") format("woff");
-  src: url("/fonts/swiss-721-outline.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-outline.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-outline.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Swiss Thick";
-  src: url("/fonts/swiss-721-thick.woff") format("woff");
-  src: url("/fonts/swiss-721-thick.ttf") format("truetype");
+  src: url("../../static/fonts/swiss-721-thick.woff") format("woff");
+  src: url("../../static/fonts/swiss-721-thick.ttf") format("truetype");
 }
 
 $mainFont: "Swiss Medium";

@@ -5,11 +5,19 @@ import cloudinary from 'decap-cms-media-library-cloudinary'
 import * as scss from '!css-loader!sass-loader!../components/all.scss'
 
 import WorkPagePreview from './preview-templates/WorkPagePreview'
+//depending on if we're in production or development, run registerPreviewStyle with the appropriate css
+if(process.env.NODE_ENV === "production"){
+    CMS.registerPreviewStyle("/commons.css");
+} else {
+    CMS.registerPreviewStyle(scss.default.toString(), { raw: true });
+}
+
+
 // import BlogPostPreview from './preview-templates/BlogPostPreview'
 // import ProductPagePreview from './preview-templates/ProductPagePreview'
 // import IndexPagePreview from './preview-templates/IndexPagePreview'
 CMS.registerPreviewTemplate("work", WorkPagePreview);
-CMS.registerPreviewStyle(scss.default.toString(), { raw: true });
+
 
 // CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary) 

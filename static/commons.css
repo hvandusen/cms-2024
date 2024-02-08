@@ -106,7 +106,7 @@
   
   @font-face {
     font-family: "Akzidenz";
-    src: url(/static/AktivGrotesk-e9a3b04b822d0346ca410453ef0b79ff.ttf);
+    src: url(/fonts/AktivGrotesk-e9a3b04b822d0346ca410453ef0b79ff.ttf);
   }
   @keyframes span-0-rotate {
     0% {
@@ -238,76 +238,76 @@
   }
   @font-face {
     font-family: "Aktiv";
-    src: url(/static/AktivGrotesk-e9a3b04b822d0346ca410453ef0b79ff.ttf) format("truetype");
+    src: url(/fonts/AktivGrotesk-e9a3b04b822d0346ca410453ef0b79ff.ttf) format("truetype");
   }
   @font-face {
     font-family: "Haptik";
-    src: url(/static/GT-Haptik-Regular-e373c181d57c3ae800819fb54bd1133e.ttf) format("truetype");
+    src: url(/fonts/GT-Haptik-Regular-e373c181d57c3ae800819fb54bd1133e.ttf) format("truetype");
   }
   @font-face {
     font-family: "Az-Regular";
-    src: url(/static/AkzidenzGrotesk-Regular-d3df8d30849232a15a1a32a1ccb04269.ttf) format("truetype");
+    src: url(/fonts/AkzidenzGrotesk-Regular-d3df8d30849232a15a1a32a1ccb04269.ttf) format("truetype");
   }
   @font-face {
     font-family: "Az-Medium";
-    src: url(/static/AkzidenzGrotesk-Medium-969e7e7adbbe37376c1c62306c445eeb.ttf) format("truetype");
+    src: url(/fonts/AkzidenzGrotesk-Medium-969e7e7adbbe37376c1c62306c445eeb.ttf) format("truetype");
   }
   @font-face {
     font-family: "Az-Bold";
-    src: url(/static/AkzidenzGrotesk-Bold-c99352e047e8fe07bb3170d99042743c.ttf) format("truetype");
+    src: url(/fonts/AkzidenzGrotesk-Bold-c99352e047e8fe07bb3170d99042743c.ttf) format("truetype");
   }
   @font-face {
     font-family: "Az-Italic";
-    src: url(/static/AkzidenzGrotesk-Italic-26a1b7d8ad4f94e0b1233eb1526d12a4.ttf) format("truetype");
+    src: url(/fonts/AkzidenzGrotesk-Italic-26a1b7d8ad4f94e0b1233eb1526d12a4.ttf) format("truetype");
   }
   @font-face {
     font-family: "Newzald";
-    src: url(/static/Newzald-Book-b111f89e0a3bb813b03b893385f969be.otf) format("opentype");
+    src: url(/fonts/Newzald-Book-b111f89e0a3bb813b03b893385f969be.otf) format("opentype");
     font-weight: normal !important;
   }
   @font-face {
     font-family: "mtdbt2f";
-    src: url(/static/mtdbt2f-f-a031be236a011b5773d6cf02dfe0cb3d.ttf) format("truetype");
-    src: url(/static/mtdbt2f-f-3fffa842bea685bf16aeaa982aa453cf.woff) format("woff");
+    src: url(/fonts/mtdbt2f-f-a031be236a011b5773d6cf02dfe0cb3d.ttf) format("truetype");
+    src: url(/fonts/mtdbt2f-f-3fffa842bea685bf16aeaa982aa453cf.woff) format("woff");
   }
   @font-face {
     font-family: "Aktiv";
-    src: url(/static/AktivGrotesk-e9a3b04b822d0346ca410453ef0b79ff.ttf) format("truetype");
+    src: url(/fonts/AktivGrotesk-e9a3b04b822d0346ca410453ef0b79ff.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Medium";
-    src: url(/static/swiss-721-medium-921154e7a97af22bba5fe502eb82d0e9.woff) format("woff");
-    src: url(/static/swiss-721-medium-449de06255dd835bae263a13656aa621.ttf) format("truetype");
+    src: url(/fonts/swiss-721-medium-921154e7a97af22bba5fe502eb82d0e9.woff) format("woff");
+    src: url(/fonts/swiss-721-medium-449de06255dd835bae263a13656aa621.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Normal";
-    src: url(/static/swiss-721-normal-71d761eea1f9aa3a3bb79691bf2c3433.woff) format("woff");
-    src: url(/static/swiss-721-normal-1d705f7ca812714481487c3bff33d005.ttf) format("truetype");
+    src: url(/fonts/swiss-721-normal-71d761eea1f9aa3a3bb79691bf2c3433.woff) format("woff");
+    src: url(/fonts/swiss-721-normal-1d705f7ca812714481487c3bff33d005.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Condensed";
-    src: url(/static/swiss-721-Condensed-134952ad01afbd2dcb6096a3d2813791.woff) format("woff");
-    src: url(/static/swiss-721-Condensed-ac1557e351d5f34d12f05008945ce944.ttf) format("truetype");
+    src: url(/fonts/swiss-721-Condensed-134952ad01afbd2dcb6096a3d2813791.woff) format("woff");
+    src: url(/fonts/swiss-721-Condensed-ac1557e351d5f34d12f05008945ce944.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Round";
-    src: url(/static/swiss-721-bold-rounded-8688eee85b00bd0ce5cc31c8a78f85ba.woff) format("woff");
-    src: url(/static/swiss-721-bold-rounded-d8f17c588e94f671e9b1c872f5a7e3af.ttf) format("truetype");
+    src: url(/fonts/swiss-721-bold-rounded-8688eee85b00bd0ce5cc31c8a78f85ba.woff) format("woff");
+    src: url(/fonts/swiss-721-bold-rounded-d8f17c588e94f671e9b1c872f5a7e3af.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Extended";
-    src: url(/static/swiss-721-extended-345db8937c686ea0cd19f0bc60820928.woff) format("woff");
-    src: url(/static/swiss-721-extended-c97e87b6d0f31c0c805ca0356f540fb0.ttf) format("truetype");
+    src: url(/fonts/swiss-721-extended-345db8937c686ea0cd19f0bc60820928.woff) format("woff");
+    src: url(/fonts/swiss-721-extended-c97e87b6d0f31c0c805ca0356f540fb0.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Outline";
-    src: url(/static/swiss-721-outline-df046ea94b3bd715ceb1cf74f4e67837.woff) format("woff");
-    src: url(/static/swiss-721-outline-b6dbe2e051f23e06f1b10c2f4c708880.ttf) format("truetype");
+    src: url(/fonts/swiss-721-outline-df046ea94b3bd715ceb1cf74f4e67837.woff) format("woff");
+    src: url(/fonts/swiss-721-outline-b6dbe2e051f23e06f1b10c2f4c708880.ttf) format("truetype");
   }
   @font-face {
     font-family: "Swiss Thick";
-    src: url(/static/swiss-721-thick-f3e8e63c6fe3b8baa1146471b1630dd5.woff) format("woff");
-    src: url(/static/swiss-721-thick-8c5635b351dbfc674b6a7ccc9afdcdf7.ttf) format("truetype");
+    src: url(/fonts/swiss-721-thick-f3e8e63c6fe3b8baa1146471b1630dd5.woff) format("woff");
+    src: url(/fonts/swiss-721-thick-8c5635b351dbfc674b6a7ccc9afdcdf7.ttf) format("truetype");
   }
   html,
   body {
@@ -1019,7 +1019,7 @@
     left: -85px;
     width: 80px;
     height: 80px;
-    background-image: url(/static/iframe-arrow-31559e860dff82e22a0534a53af63cba.png);
+    background-image: url(/fonts/iframe-arrow-31559e860dff82e22a0534a53af63cba.png);
     background-size: contain;
     background-repeat: no-repeat;
   }

@@ -24,14 +24,13 @@ CMS.registerPreviewTemplate("work", WorkPagePreview);
 CMS.registerMediaLibrary(cloudinary) 
 
 function block(obj){
-    if(obj.img)
-    console.log("HEEEEEEENRY",obj, obj.img[0].indexOf(".mp4"))
+    // console.log("HEEEEEEENRY",obj, obj.img[0].indexOf(".mp4"))
     const isImage = obj.img && obj.img[0].indexOf(".mp4") === -1
     return `<div class='caption-container ${isImage ? "image-caption" : "video-caption"}'>
       ${isImage ? `<img src=${obj.img}></img>` : `<div class="mobile-video-cover"><video playsinline autoplay muted loop src=${obj.img}></video></div>`}
     <div class='caption'>${typeof obj.caption !== "undefined" ?  obj.caption : ""}</div></div>`;
   }
-  
+   
   CMS.registerEditorComponent({
     // Internal id of the component
     id: "caption",

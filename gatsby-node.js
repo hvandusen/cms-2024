@@ -58,6 +58,7 @@ exports.createPages = ({ actions, graphql }) => {
     posts.forEach((edge) => {
       const id = edge.node.id
       const postType = edge.node.frontmatter.type
+      console.log(`creating ${edge.node.fields.slug}`)
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,

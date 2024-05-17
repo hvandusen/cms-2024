@@ -39,7 +39,7 @@ export const Blocks = ({ postContent, images }) => {
         console.log({block})
           return (images && typeof images[imagesUsed+1] !== "undefined" && !!images[imagesUsed+1]) ? 
           (<div key={i} className='caption-container image-caption block block-image work-image'>
-              <GatsbyImage image={images[imagesUsed++].childImageSharp.gatsbyImageData} alt="" />
+              <GatsbyImage objectFit="contain" image={images[imagesUsed++].childImageSharp.gatsbyImageData} alt="" />
             {block.caption && <div className='caption'>{block.caption}</div>}
             </div>) : (block.image?.length ? (
             <div key={i} className='caption-container image-caption block block-image work-image'>

@@ -29,6 +29,7 @@ postContent:
   - type: video
     video:
       - https://res.cloudinary.com/candusen/video/upload/v1716407889/Screen_Recording_2024-05-22_at_3.54.38_PM-resized_df5mv3.mp4
+      - https://res.cloudinary.com/candusen/video/upload/v1716408159/cookery-screenrecord-2_u43lgy.mp4
     caption: I synced up two HTML videos to show a before and after of a cooked
       video ;-)
 date: 2024-05-22T19:47:01.280Z

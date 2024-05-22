@@ -10,9 +10,9 @@ description: ""
 postContent:
   - type: text
     text: Website I designed for the software [Cookery](https://cookery.cooking)
-      made with [Cory Arcangel](https://coryarcangel.com/). The software is a
-      tool that uses image deepfrying techniques that allow the user to create
-      different recipes to alter image and video.
+      which I built with [Cory Arcangel](https://coryarcangel.com/). The
+      software is a tool that uses image deepfrying techniques that allow the
+      user to create different recipes to alter image and video.
   - type: video
     video:
       - https://res.cloudinary.com/candusen/video/upload/v1716407372/cookery-screen-record-resized_my10nt.mp4

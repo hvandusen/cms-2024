@@ -1,5 +1,7 @@
 ---
 title: About Henry Van Dusen
+templateKey: about
+type: about
 ---
 Hey!
 

@@ -3,8 +3,6 @@ templateKey: work
 title: cookery.cooking
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1716407266/Screenshot_2024-05-22_at_3.34.42_PM_rzrzoe.jpg
-  - https://res.cloudinary.com/candusen/image/upload/v1716407266/Screenshot_2024-05-22_at_3.34.42_PM_rzrzoe.jpg
   - https://res.cloudinary.com/candusen/image/upload/v1716474409/Screenshot_2024-05-22_at_3.34.42_PM_xktscn.png
 featured: false
 draft: false

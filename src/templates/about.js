@@ -11,7 +11,7 @@ const AboutPage = ({data} ) => {
         <Layout pageClass="about">
         <div id="about-wrapper">
             <div id="about-image">
-                <img src="hvd_pic.jpg"></img>
+                <img src="/hvd_pic.jpg"></img>
             </div>
             <div id='about-page'>
                 <h1 id='about-title'>{title}</h1>

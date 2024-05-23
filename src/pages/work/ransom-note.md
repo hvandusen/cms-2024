@@ -4,6 +4,7 @@ title: Ransom Note
 type: Website
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1716472568/Screenshot_2024-05-23_at_9.55.58_AM_tdxnvi.png
+  - https://res.cloudinary.com/candusen/image/upload/v1716474146/Screenshot_2024-05-23_at_10.22.05_AM_egi4mk.png
 featured: false
 draft: false
 postContent:

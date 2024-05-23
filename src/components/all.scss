@@ -1169,3 +1169,32 @@ span {
     text-decoration: underline;
   }
 }
+
+#page.about {
+    background: linear-gradient(45deg, #00000059, transparent), #ff0000e8;
+}
+
+#about-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 2rem;
+    max-width: 800px;
+    #about-image {
+        flex: 0 1 auto;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+#about-page {
+    padding: 2rem;
+    flex: 1 0 50%;
+    #about-title {
+
+    }
+
+}

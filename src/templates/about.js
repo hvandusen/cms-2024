@@ -8,11 +8,17 @@ const AboutPage = ({data} ) => {
     let title = post.frontmatter.title
     let content = post.html
     return (
-        <Layout>
-        <div>
-            <h1>{title}</h1>
-            <div dangerouslySetInnerHTML={{__html: content}} />
+        <Layout pageClass="about">
+        <div id="about-wrapper">
+            <div id="about-image">
+                <img src="hvd_pic.jpg"></img>
+            </div>
+            <div id='about-page'>
+                <h1 id='about-title'>{title}</h1>
+                <div dangerouslySetInnerHTML={{__html: content}} />
+            </div>
         </div>
+
         </Layout>
     )
 }

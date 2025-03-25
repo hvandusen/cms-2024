@@ -3,7 +3,6 @@ templateKey: work
 title: Dogma 3000 website
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1742920498/Screenshot_2025-03-25_at_12.30.36_PM_xsefls.png
   - https://res.cloudinary.com/candusen/image/upload/v1742927163/Screenshot_2025-03-25_at_2.25.58_PM_zx19vj.png
 featured: false
 draft: false

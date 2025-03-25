@@ -3,7 +3,7 @@ templateKey: work
 title: Pink Noise Website
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1742920724/Screenshot_2025-03-25_at_12.38.38_PM_owaprv.png
+  - https://res.cloudinary.com/candusen/image/upload/v1742927117/Screenshot_2025-03-25_at_2.25.10_PM_zfrrnr.png
 featured: false
 draft: false
 description: ""

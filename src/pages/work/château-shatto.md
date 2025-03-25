@@ -3,7 +3,7 @@ templateKey: work
 title: Château Shatto
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1742920425/Screenshot_2025-03-25_at_12.31.20_PM_mwdj14.png
+  - https://res.cloudinary.com/candusen/image/upload/v1742926886/Screenshot_2025-03-25_at_2.21.03_PM_ibyexz.png
 featured: false
 draft: false
 postContent:

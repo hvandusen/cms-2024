@@ -3,7 +3,7 @@ templateKey: work
 title: Sweet Stash
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1758817100/ss-img-1_de3ifc.jpg
+  - https://res.cloudinary.com/candusen/image/upload/v1758817410/ss-img1_yqnlb8.jpg
 featured: false
 draft: false
 description: Fun website for insurgent gummy makers Sweet Stash. Designed by

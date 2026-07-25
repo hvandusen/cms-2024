@@ -61,5 +61,9 @@
   },
   "engines": {
     "node": ">= 14.15.0"
+  },
+  "overrides": {
+    "ordered-binary": "^1.6.1",
+    "msgpackr": "^1.12.1"
   }
 }

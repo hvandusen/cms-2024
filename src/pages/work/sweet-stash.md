@@ -1,7 +1,7 @@
 ---
 templateKey: work
 title: Sweet Stash
-type: Candusen page
+type: Website
 featuredimage:
   - https://res.cloudinary.com/candusen/image/upload/v1758817410/ss-img1_yqnlb8.jpg
 featured: false

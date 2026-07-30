@@ -12,6 +12,10 @@ package-lock.json
 assets
 posts-data.json
 
+# Astro port (astro/) — build output and generated types
+astro/dist
+astro/.astro
+
 # Local Netlify folder
 .netlify
 

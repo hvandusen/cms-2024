@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Thumb from '../components/Thumb.astro'
+
+// The homepage shows every published work, newest first — `featured` plays no
+// part in it. src/pages/index.js sorts ascending by date then reverses, and the
+// filter split is a no-op while no filter is active.
+const works = (await getCollection('work', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+)
+---
+
+<BaseLayout title="Henry Van Dusen" description="henry van dusen's work :)">
+  <div class="homepage">
+    {/* PostFilter is not ported yet, so the grid never gets the .filtered class. */}
+    <div class="project-grid">
+      {works.map((entry) => <Thumb entry={entry} />)}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,57 @@
+---
+interface Props {
+  id: string
+  code: string
+}
+
+const { id, code } = Astro.props
+---
+
+<div class="canvasContainer">
+  <!-- `hidpi` is read by paper.js itself, not a standard canvas attribute, so
+       it is spread past the typed attribute list. -->
+  <canvas id={`canvas-${id}`} class="fullscreen" {...{ hidpi: 'on' }}></canvas>
+</div>
+
+<!--
+  paper.js is a global, and the sketches in paper_code are plain scripts written
+  against a PaperScope — not modules. So these stay is:inline and load in order:
+  paper, then the helper globals the sketches call (num, colorWheel, prettyRaCo),
+  then the sketch itself. This mirrors PaperWrapper.js in the Gatsby site.
+-->
+<script is:inline src="/paper-full.min.v0.12.15.js"></script>
+<script is:inline src="/paper-utils.js"></script>
+<script is:inline define:vars={{ id, code }}>
+  ;(function () {
+    var canvas = document.getElementById('canvas-' + id)
+    if (!canvas || typeof paper === 'undefined') return
+
+    var scope = new paper.PaperScope()
+    window.installOldFunctions(window, scope)
+
+    var wrapper = canvas.parentElement
+    canvas.width = wrapper.offsetWidth || window.innerWidth
+    canvas.height = wrapper.offsetHeight || window.innerHeight
+
+    scope.install(window)
+    scope.setup(canvas)
+
+    // Sketches were written against window dimensions; the canvas is the view.
+    var amended = code
+      .replace(/window\.innerWidth/gi, 'view.bounds.width')
+      .replace(/window\.innerHeight/gi, 'view.bounds.height')
+
+    scope.execute(amended)
+    scope.activate()
+  })()
+</script>
+
+<style>
+  .canvasContainer {
+    position: relative;
+  }
+  .canvasContainer canvas {
+    height: 100%;
+    width: 100%;
+  }
+</style>

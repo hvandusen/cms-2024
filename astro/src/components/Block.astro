@@ -1,0 +1,92 @@
+---
+import snarkdown from 'snarkdown'
+import type { Block } from '../content.config'
+
+interface Props {
+  block: Block
+}
+
+const { block } = Astro.props
+
+// Class names are carried over verbatim from the Gatsby Content.js so the
+// existing SASS in src/components/all.scss can be reused at cutover.
+
+// Some entries route .mp4 files through the image widget, which the old CMS
+// preview also special-cased.
+const isVideoUrl = (url: string) => /\.mp4($|\?)/i.test(url)
+
+function youtubeId(raw: string) {
+  if (raw.includes('v=')) return raw.split('v=')[1].split('&')[0]
+  if (raw.includes('youtu.be/')) return raw.split('youtu.be/')[1].split(/[?&]/)[0]
+  return raw
+}
+
+const codeSource =
+  block.type === 'code'
+    ? typeof block.code === 'string'
+      ? block.code
+      : (block.code?.code ?? '')
+    : ''
+---
+
+{
+  block.type === 'text' && (
+    <p class="block block-text work-text" set:html={snarkdown(block.text)} />
+  )
+}
+
+{
+  block.type === 'image' &&
+    block.image.length > 0 &&
+    (isVideoUrl(block.image[0]) ? (
+      <div class="caption-container block block-video work-video videowrapper">
+        <div class="mobile-video-cover">
+          <video src={block.image[0]} autoplay loop muted playsinline />
+        </div>
+        {block.caption && <div class="caption">{block.caption}</div>}
+      </div>
+    ) : (
+      <div class="caption-container image-caption block block-image work-image">
+        <img src={block.image[0]} alt={block.caption ?? ''} loading="lazy" />
+        {block.caption && <div class="caption">{block.caption}</div>}
+      </div>
+    ))
+}
+
+{
+  block.type === 'video' && block.video.length > 0 && (
+    <div class="caption-container block block-video work-video videowrapper">
+      <div class="mobile-video-cover">
+        <video src={block.video[0]} autoplay loop muted playsinline />
+      </div>
+      {block.caption && <div class="caption">{block.caption}</div>}
+    </div>
+  )
+}
+
+{block.type === 'header' && <h2 class="block block-header work-header">{block.header}</h2>}
+
+{
+  codeSource && (
+    <pre class="block block-code work-code"><code>{codeSource}</code></pre>
+  )
+}
+
+{
+  block.type === 'youtube' && (
+    <div class="caption-container block block-video work-video videowrapper">
+      <div class="mobile-video-cover">
+        <iframe
+          width="100%"
+          height="480"
+          src={`https://www.youtube.com/embed/${youtubeId(block.text)}`}
+          title="YouTube video player"
+          style="border: 0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
+      {block.caption && <div class="caption">{block.caption}</div>}
+    </div>
+  )
+}

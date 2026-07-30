@@ -1,0 +1,68 @@
+---
+import logo from '../img/ellsworth-shape-logo-padding.png'
+
+// Ported from Navbar.js. Cart mode is intentionally dropped, so the cart logo
+// and the .cart-mode branch are gone — .nav-icon.cart-mode still exists in the
+// stylesheet but nothing emits it now.
+//
+// The title is split per-character because .navbar #nav-main-link:hover applies
+// span-text-rgb-sparkle to each <span> on hover; a plain string kills the effect.
+const title = 'Henry Van Dusen'
+---
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main-navigation">
+  <a href="/" class="navbar-item navbar-icon" title="henry van dusen homepage">
+    <div
+      class="nav-icon"
+      role="menu"
+      tabindex="0"
+      data-target="nav"
+      style={`background-image: url(${logo.src}); background-size: contain; background-repeat: no-repeat;`}
+    >
+    </div>
+  </a>
+
+  <a href="/" id="nav-main-link" class="navbar-item" title="henry van dusen homepage">
+    <h1 class="header">{title.split('').map((c) => <span>{c}</span>)}</h1>
+  </a>
+
+  <!-- Was type="email", which isn't a valid button type. -->
+  <button class="email" type="button" data-email="henry@candusen.net">
+    Wanna work together?
+  </button>
+
+  <div class="container">
+    <div class="navbar-brand"></div>
+  </div>
+</nav>
+
+<script>
+  const nav = document.querySelector('.navbar')
+  const icon = nav?.querySelector('.nav-icon')
+  const email = nav?.querySelector<HTMLButtonElement>('.email')
+
+  // .navbar.is-active reveals .container — same toggle the React version did.
+  const toggleMenu = () => nav?.classList.toggle('is-active')
+  icon?.addEventListener('click', toggleMenu)
+  icon?.addEventListener('keydown', (event) => {
+    const key = (event as KeyboardEvent).key
+    if (key === 'Enter' || key === ' ') {
+      event.preventDefault()
+      toggleMenu()
+    }
+  })
+
+  email?.addEventListener('click', async () => {
+    const address = email.dataset.email
+    if (!address) return
+    try {
+      await navigator.clipboard.writeText(address)
+      email.classList.add('copied')
+      email.textContent = 'Email copied!'
+    } catch {
+      // Clipboard API needs a secure context and can be blocked outright;
+      // fall back to showing the address rather than silently doing nothing.
+      email.textContent = address
+    }
+  })
+</script>

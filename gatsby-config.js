@@ -65,12 +65,16 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: "gatsby-plugin-decap-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
+    // Disabled: this emitted a 4.7MB Decap bundle into public/admin that was
+    // never loaded — static/admin/index.html overwrites the generated
+    // index.html and now loads Sveltia from a CDN instead. src/cms/cms.js and
+    // its preview templates are left on disk for reference.
+    // {
+    //   resolve: "gatsby-plugin-decap-cms",
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/cms.js`,
+    //   },
+    // },
     // {
     //   resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
     //   options: {

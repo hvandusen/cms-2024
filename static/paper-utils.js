@@ -98,4 +98,4 @@ const installOldFunctions = (window,paper) => {
     }
 
 }
-export default installOldFunctions
+window.installOldFunctions = installOldFunctions

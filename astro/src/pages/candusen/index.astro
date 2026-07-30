@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+
+// CandusenList.js: every non-draft "Candusen page", as a two-column grid of
+// title links. The PaperWrapper preview it used to render was already commented
+// out there, so the list is just links.
+const sketches = await getCollection(
+  'work',
+  ({ data }) => data.type === 'Candusen page' && !data.draft
+)
+---
+
+<BaseLayout title="Candusen | Henry Van Dusen">
+  <div class="paper-listing" style="display: grid; grid-template-columns: 1fr 1fr">
+    {
+      sketches.map((entry) => (
+        <div class="paper-preview" style="overflow: scroll; padding: 2rem">
+          <a class="paper-preview-link" href={`/work/${entry.id}/`}>
+            {entry.data.title}
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</BaseLayout>

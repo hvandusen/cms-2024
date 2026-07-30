@@ -1,0 +1,16 @@
+# Lives in static/ because that is Astro's publicDir — this file has to land in
+# the published dist/ root for Netlify to read it.
+
+# Astro content-hashes everything under /_astro/, so it can never go stale.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Stable filenames, so cache hard but leave them revalidatable.
+/fonts/*
+  Cache-Control: public, max-age=604800
+/img/*
+  Cache-Control: public, max-age=604800
+
+# The CMS is how content gets published; a stale copy is a broken editor.
+/admin/*
+  Cache-Control: no-cache

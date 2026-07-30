@@ -105,4 +105,16 @@ const work = defineCollection({
   }),
 })
 
-export const collections = { work }
+// One entry (src/pages/about/index.md), but routing it through a collection
+// keeps it on the same glob loader as work/ rather than reaching across the
+// project root with a raw import.
+const about = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: '../src/pages/about' }),
+  schema: z.object({
+    templateKey: z.literal('about'),
+    title: z.string(),
+    type: z.literal('about'),
+  }),
+})
+
+export const collections = { work, about }

@@ -27,7 +27,9 @@
       xhr.send();
     });
   </script>
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <!-- Sveltia CMS. Version pinned deliberately: this file previously floated on
+       netlify-cms@^2.0.0 from a CDN, which is how we ended up silently running
+       an abandoned 2.x bundle. Bump this by hand. -->
+  <script src="https://unpkg.com/@sveltia/cms@0.172.4/dist/sveltia-cms.js"></script>
 </body>
 </html>

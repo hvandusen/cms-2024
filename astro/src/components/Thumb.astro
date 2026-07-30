@@ -1,0 +1,57 @@
+---
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  entry: CollectionEntry<'work'>
+}
+
+const { entry } = Astro.props
+const { data } = entry
+
+// Mirrors Thumb.js: " thumb thumb-" + type.split(" ")[0].toLowerCase().
+// WorkTypeColors.scss generates .thumb-candusen / -website / -software / -mix /
+// -print / -essay off exactly this naming, and all.scss keys the grid spans off
+// .thumb-website / .thumb-software, so this has to match.
+const typeClass = `thumb-${data.type.split(' ')[0].toLowerCase()}`
+
+// Thumb.js switches on type: "Candusen page" and "Drawing" render the image
+// alone, everything else gets the label/title/description block too.
+const imageOnly = data.type === 'Candusen page' || data.type === 'Drawing'
+
+// .thumb-image is an absolutely-positioned background layer (gatsby-background-image
+// in the original), not an <img> — all.scss sizes it with background-size.
+const image = data.featuredimage?.[0]
+const backgroundSize = imageOnly ? 'contain' : 'cover'
+
+// grid_col / grid_row are per-entry span overrides, applied inline in Thumb.js.
+const spans = [
+  data.grid_col ? `grid-column: span ${data.grid_col}` : '',
+  data.grid_row ? `grid-row: span ${data.grid_row}` : '',
+]
+  .filter(Boolean)
+  .join('; ')
+---
+
+<a href={`/work/${entry.id}/`} class={`thumb ${typeClass} wrapper`} style={spans || undefined}>
+  {
+    !imageOnly && (
+      <>
+        <div class="thumb-top">
+          <span class="thumb-label color">
+            {data.type === 'Candusen page' ? 'fun' : data.type}
+          </span>
+          <p class="thumb-title">{data.title.replace('.com', ' . com')}</p>
+        </div>
+        {data.description && <p class="thumb-description">{data.description}</p>}
+      </>
+    )
+  }
+  {
+    image && (
+      <div
+        class="thumb-image"
+        style={`background-image: url(${image}); background-size: ${backgroundSize}; background-position: center;`}
+      />
+    )
+  }
+</a>

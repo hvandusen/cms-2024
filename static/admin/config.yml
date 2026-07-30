@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: hvandusen/cms-2024
   branch: main
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -51,14 +52,21 @@ collections:
         summary: "items"
         label_singular: "block"
         types:
+          # Every variable type in a list must be an object widget with `fields`.
+          # Netlify CMS 2.x tolerated a bare widget here; Sveltia rejects it.
+          # Both blocks below keep the exact on-disk shape they already had:
+          # {type: header, header: "..."} and {type: text, text: "..."}.
           - label: 'Header'
             name: 'header'
-            widget: 'text'
+            widget: 'object'
+            fields:
+              - { label: 'Header', name: 'header', widget: 'text' }
           - label: 'Text'
             name: 'text'
             summary: '{{fields.text}}'
-            widget: 'markdown'
-            field: { label: 'Text', name: 'text', widget: 'markdown' }
+            widget: 'object'
+            fields:
+              - { label: 'Text', name: 'text', widget: 'markdown' }
           - label: 'Image'
             name: 'image'
             widget: 'object'
@@ -76,6 +84,7 @@ collections:
           - label: 'Youtube'
             name: 'youtube'
             summary: '{{fields.text}}'
+            widget: 'object'
             fields:
               - { label: 'url', name: 'text', widget: 'string' }
               - { label: 'Caption', name: 'caption', widget: 'text', required: false}

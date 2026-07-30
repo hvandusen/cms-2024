@@ -1,5 +1,10 @@
+# The Astro project lives in astro/; command and publish are resolved relative
+# to base, so publish = "dist" means astro/dist.
 [build]
-  publish = "public"
+  base = "astro"
   command = "npm run build"
+  publish = "dist"
 
-
+[build.environment]
+  # astro@7 requires >=22.12. Netlify's default floats, so pin it.
+  NODE_VERSION = "23"

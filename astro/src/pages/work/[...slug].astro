@@ -1,0 +1,126 @@
+---
+import { getCollection, render } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Block from '../../components/Block.astro'
+import PaperSketch from '../../components/PaperSketch.astro'
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('work', ({ data }) => !data.draft)).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  )
+  return entries.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      // paper-page.js renders prev/next links off the sorted collection.
+      previous: entries[i - 1]?.id ?? null,
+      next: entries[i + 1]?.id ?? null,
+      // work.js queried every entry sharing this entry's frontmatter type, then
+      // dropped drafts and the entry itself at render time.
+      others: entries.filter((o) => o.data.type === entry.data.type && o.id !== entry.id),
+    },
+  }))
+}
+
+const { entry, previous, next, others } = Astro.props
+const { data } = entry
+const { Content } = await render(entry)
+
+// Gatsby picked the template by frontmatter type rather than templateKey —
+// every entry is templateKey: work, but "Candusen page" entries are sketches
+// and get the fullscreen .paper-page treatment instead of .work-page.
+const isSketch = data.type === 'Candusen page'
+const displayUrl = data.display_url ?? data.url
+---
+
+<BaseLayout
+  title={`${data.title} | Henry Van Dusen`}
+  description={data.description}
+  ogImage={data.featuredimage?.[0]}
+>
+  {
+    isSketch ? (
+      <div class="paper-page">
+        <div class="paper-nav">
+          {previous && <a class="previous" href={`/work/${previous}/`}>previous</a>}
+          {next && <a class="next" href={`/work/${next}/`}>next</a>}
+        </div>
+
+        {(data.description || data.postContent) && (
+          <button id="info">
+            <div id="info-icon">i</div>
+            <div id="info-content">
+              <div id="info-content-wrapper">
+                {data.description && <p>{data.description}</p>}
+                {data.postContent?.map((b) => <Block block={b} />)}
+              </div>
+            </div>
+          </button>
+        )}
+
+        {data.paper_code?.code && (
+          <PaperSketch id={entry.id} code={data.paper_code.code} />
+        )}
+      </div>
+    ) : (
+      <div id="work-page-wrapper">
+        <section class="section work-page">
+          <div class="container content">
+            <h1>{data.title}</h1>
+
+            {data.description && (
+              <div class="work-description">
+                <p>{data.description}</p>
+              </div>
+            )}
+
+            {data.postContent?.map((b) => <Block block={b} />)}
+
+            <Content />
+
+            {displayUrl && (
+              <a
+                class="work-iframe-link"
+                href={displayUrl.startsWith('http') ? displayUrl : `https://${displayUrl}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {displayUrl}
+              </a>
+            )}
+
+            {data.tags && data.tags.length > 0 && (
+              <div style="margin-top: 4rem">
+                <h3>Tags</h3>
+                <ul class="taglist">
+                  {data.tags.map((tag) => <li>{tag}</li>)}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+        <section class="section other-work">
+          {/* work.js gated on the query returning more than 2 entries, which
+              counted this entry, so it took 2 siblings to show the section. */}
+          {others.length > 1 && (
+            <div id="other-work">
+              <h3>More {data.type.toLowerCase()}s:</h3>
+              <div id="other-work-list">
+                {others.map((other) => (
+                  <a class="other-work-item" href={`/work/${other.id}/`}>
+                    <p class="other-work-item-title">{other.data.title}</p>
+                    {other.data.featuredimage?.[0] && (
+                      <div class="other-work-item-image">
+                        <img src={other.data.featuredimage[0]} alt={other.data.title} />
+                      </div>
+                    )}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      </div>
+    )
+  }
+</BaseLayout>

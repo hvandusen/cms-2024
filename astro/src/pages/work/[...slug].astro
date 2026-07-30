@@ -15,11 +15,14 @@ export async function getStaticPaths() {
       // paper-page.js renders prev/next links off the sorted collection.
       previous: entries[i - 1]?.id ?? null,
       next: entries[i + 1]?.id ?? null,
+      // work.js queried every entry sharing this entry's frontmatter type, then
+      // dropped drafts and the entry itself at render time.
+      others: entries.filter((o) => o.data.type === entry.data.type && o.id !== entry.id),
     },
   }))
 }
 
-const { entry, previous, next } = Astro.props
+const { entry, previous, next, others } = Astro.props
 const { data } = entry
 const { Content } = await render(entry)
 
@@ -95,6 +98,27 @@ const displayUrl = data.display_url ?? data.url
               </div>
             )}
           </div>
+        </section>
+        <section class="section other-work">
+          {/* work.js gated on the query returning more than 2 entries, which
+              counted this entry, so it took 2 siblings to show the section. */}
+          {others.length > 1 && (
+            <div id="other-work">
+              <h3>More {data.type.toLowerCase()}s:</h3>
+              <div id="other-work-list">
+                {others.map((other) => (
+                  <a class="other-work-item" href={`/work/${other.id}/`}>
+                    <p class="other-work-item-title">{other.data.title}</p>
+                    {other.data.featuredimage?.[0] && (
+                      <div class="other-work-item-image">
+                        <img src={other.data.featuredimage[0]} alt={other.data.title} />
+                      </div>
+                    )}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
       </div>
     )

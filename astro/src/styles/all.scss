@@ -948,6 +948,11 @@ span {
   }
   .other-work-item-image {
     width: 300px;
+    // GatsbyImage constrained the thumbnail itself; a plain <img> needs telling.
+    img {
+      max-width: 100%;
+      display: block;
+    }
   }
 }
 .block-text {

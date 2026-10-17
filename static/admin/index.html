@@ -4,29 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Henry VD CMS</title>
-  <style>
-    #publish {
-      position: absolute;
-      right: 250px;
-      z-index: 10000;
-      top: 20px;
-      color: black;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
-  <a id="publish">Publish</a>
-  <script>
-    var publish = document.getElementById("publish");
-    publish.addEventListener('click', function (e) {
-      e.preventDefault();
-      var xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://api.netlify.com/build_hooks/5f636e14a0ebcb0e74013871", true);
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.send();
-    });
-  </script>
+  <!-- Publishing is Sveltia's built-in "Publish Changes" button. It needs the
+       Netlify build hook URL, which lives in per-browser prefs rather than this
+       file or config.yml: Settings > Advanced > Deploy Hook > Hook URL.
+         https://api.netlify.com/build_hooks/5f636e14a0ebcb0e74013871
+       Set it once per browser you edit from. Replaces a hand-rolled anchor that
+       was absolutely positioned against netlify-cms 2.x's header and fired the
+       hook with no success/failure feedback. -->
   <!-- Sveltia CMS. Version pinned deliberately: this file previously floated on
        netlify-cms@^2.0.0 from a CDN, which is how we ended up silently running
        an abandoned 2.x bundle. Bump this by hand. -->

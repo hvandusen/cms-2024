@@ -1,22 +1,10 @@
-# Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# Gatsby's build cache. Nothing writes it anymore, and the 354MB directory left
-# at the repo root is safe to delete by hand.
-.cache/
-
-# Build output. Note these are anchored: an unanchored `public/` also matched
-# astro/public, which silently kept the port's fonts out of git entirely.
-/public/
+# Build output
 astro/dist
 astro/.astro
 
 .DS_Store
-yarn-error.log
-.atomignore
-assets
-posts-data.json
 
 # Local Netlify folder
 .netlify

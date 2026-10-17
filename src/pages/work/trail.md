@@ -4,7 +4,7 @@ title: Trail
 type: Candusen page
 date: 2020-07-29T15:54:52.415Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600531959/Screen_Shot_2020-09-19_at_12.10.36_PM_sqje39.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-19_at_12.10.36_PM_sqje39.png
 paper_code:
   code: >
 

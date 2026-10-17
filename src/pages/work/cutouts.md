@@ -4,7 +4,7 @@ title: Cutouts
 type: Candusen page
 date: 2020-07-29T15:23:05.036Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431842/Screen_Shot_2020-09-17_at_6.46.19_PM_kj9d6b.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.46.19_PM_kj9d6b.png
 paper_code:
   code: |
     function set(pt,size){

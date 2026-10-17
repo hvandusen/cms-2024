@@ -4,7 +4,7 @@ title: Needles
 type: Candusen page
 date: 2020-07-29T15:44:27.158Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431840/Screen_Shot_2020-09-17_at_6.51.37_PM_l3suxl.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.51.37_PM_l3suxl.png
 paper_code:
   code: >
     var lines = new Group();

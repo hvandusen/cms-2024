@@ -4,7 +4,7 @@ title: Prism
 type: Candusen page
 date: 2020-07-29T15:48:40.517Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431836/Screen_Shot_2020-09-17_at_6.52.42_PM_s5bvx6.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.52.42_PM_s5bvx6.png
 paper_code:
   code: >
     var size = 900

@@ -751,7 +751,7 @@ span {
     img,
     video,
     .gatsby-image-wrapper-constrained {
-      @include rgbShadow;
+    //   @include rgbShadow;
       width: 100%;
       &.gatsby-image-wrapper-constrained {
         img {
@@ -905,7 +905,7 @@ span {
     .videowrapper,
     .work-image {
       position: relative;
-      @include rgbShadow;
+    //   @include rgbShadow;
       margin-bottom: 6rem;
       img,
       video {

@@ -3,7 +3,7 @@ templateKey: work
 title: Train of thought
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1640838681/Screen_Shot_2021-12-29_at_11.30.57_PM_ed0l08.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-12-29_at_11.30.57_PM_ed0l08.png
 featured: false
 draft: false
 date: 2021-12-30T04:31:04.420Z

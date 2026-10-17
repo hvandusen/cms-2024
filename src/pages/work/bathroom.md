@@ -3,7 +3,7 @@ templateKey: work
 title: Bathroom
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1621455221/Screen_Shot_2021-05-19_at_4.13.28_PM_uy19mz.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_4.13.28_PM_uy19mz.png
 featured: false
 draft: false
 description: "I was waiting for a bus near Penn Station to go to DC and killed
@@ -11,7 +11,7 @@ description: "I was waiting for a bus near Penn Station to go to DC and killed
 postContent:
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1640712327/IMG_1255_ezb5up.jpg
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/IMG_1255_ezb5up.jpg
   - type: text
     text: I had never tried to put any of my drawings in perspective, and I guess
       seeing the strong pattern on the floor from this particular angle got me
@@ -117,6 +117,6 @@ paper_code:
       create();
     }
 images:
-  - https://res.cloudinary.com/candusen/image/upload/v1621455089/Screen_Shot_2021-05-19_at_4.11.17_PM_aivx3e.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_4.11.17_PM_aivx3e.png
 desort: false
 ---

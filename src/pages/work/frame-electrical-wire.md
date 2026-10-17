@@ -10,5 +10,5 @@ description: |
   2019
   Electrical wire
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600701297/IMG_7769_qb7jav.jpg
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/IMG_7769_qb7jav.jpg
 ---

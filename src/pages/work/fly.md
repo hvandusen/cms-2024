@@ -6,7 +6,7 @@ featured: false
 draft: false
 date: 2020-09-18T13:53:49.450Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600437309/Screen_Shot_2020-09-18_at_9.53.27_AM_japppo.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_9.53.27_AM_japppo.png
 paper_code:
   code: >-
     var lines = new Group();

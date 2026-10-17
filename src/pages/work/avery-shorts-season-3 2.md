@@ -11,9 +11,9 @@ display_url: https://averyshorts.com/season3
 description: Designed and built season 0 of the architectural e-newsletter Avery
   Shorts, produced by the Columbia Books for Architecture and the City.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1616355058/Screen_Shot_2021-03-21_at_3.07.51_PM_r46lnb.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-03-21_at_3.07.51_PM_r46lnb.png
 postContent:
   - type: video
     video:
-    - https://res.cloudinary.com/candusen/video/upload/v1621355886/as0-vid_ptyiih.mp4
+    - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/as0-vid_ptyiih.mp4
 ---

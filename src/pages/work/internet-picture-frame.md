@@ -9,11 +9,11 @@ date-finish: 2021-05-18T17:55:08.992Z
 url: https://frame-streamer.herokuapp.com
 description: ""
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1616359975/Screen_Shot_2021-03-21_at_4.52.43_PM_d93kgv.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-03-21_at_4.52.43_PM_d93kgv.png
 postContent:
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1621361542/Screen_Shot_2021-05-18_at_1.54.42_PM_dzuylz.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-18_at_1.54.42_PM_dzuylz.png
   - type: text
     text: This project has been years in the making for me. I wondered what it'd be
       like to make my own digital picture frame. Instead of showing a slideshow
@@ -24,7 +24,7 @@ postContent:
       then maybe another sandwich, and so on.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1621361543/Screen_Shot_2021-05-18_at_1.47.30_PM_hzjssf.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-18_at_1.47.30_PM_hzjssf.png
     caption: A picture of a "light".
   - type: text
     text: So I needed a program that could, as if a stream of consciousness, create
@@ -33,14 +33,14 @@ postContent:
       help do this.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1621361542/Screen_Shot_2021-05-18_at_1.50.22_PM_dbh6if.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-18_at_1.50.22_PM_dbh6if.png
     caption: Another "light" pic!
   - type: text
     text: |-
       Wordnet is a database for real (or human) languages, in my case English. It has a list of meanings of each word just like a dictionary, but the kicker is it also situates each word into an all-encompassing heirarchy of things and concepts. Searching aardvark on wordnet will tell you that it's an anteater which is a placental mammal which is a mammal which is a vertebrate which is a chordate which is a animal which is a organism which is a living which is a whole which is a object which is a physical entity.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1621459518/Screen_Shot_2021-05-19_at_5.23.36_PM_kgbbwi.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_5.23.36_PM_kgbbwi.png
     caption: A Synonyms/Hypernym hierarchy WordNet search for the term "microwave."
   - type: text
     text: My picture frame program traverses the Wordnet's "tree of meaning" to
@@ -53,6 +53,6 @@ postContent:
       for other organisms. This process goes on forever!
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1621361542/Screen_Shot_2021-05-18_at_1.48.49_PM_gycr9o.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-18_at_1.48.49_PM_gycr9o.png
     caption: More "light" action!
 ---

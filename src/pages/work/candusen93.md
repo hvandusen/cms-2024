@@ -11,5 +11,5 @@ description: |-
   My instagram page.
   https://www.instagram.com/candusen93/
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600709323/Screen_Shot_2020-09-21_at_1.28.32_PM_gtczte.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-21_at_1.28.32_PM_gtczte.png
 ---

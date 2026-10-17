@@ -3,7 +3,7 @@ templateKey: work
 title: Château Shatto
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1742926886/Screenshot_2025-03-25_at_2.21.03_PM_ibyexz.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_2.21.03_PM_ibyexz.png
 featured: false
 draft: false
 postContent:
@@ -14,20 +14,20 @@ postContent:
       identity.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1742920425/Screenshot_2025-03-25_at_12.31.20_PM_mwdj14.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_12.31.20_PM_mwdj14.png
   - type: text
     text: We scraped the prior Wordpress site using custom scripts, and built out a
       highly customized CMS to suit CS's workflow before performing a migration
       of all their past shows, artists pages, press releases, and news.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1742920423/Screenshot_2025-03-25_at_12.31.30_PM_ptyvjd.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_12.31.30_PM_ptyvjd.png
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1742920426/Screenshot_2025-03-25_at_12.33.21_PM_se9qcv.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_12.33.21_PM_se9qcv.png
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1742920423/Screenshot_2025-03-25_at_12.31.58_PM_lodqri.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_12.31.58_PM_lodqri.png
     caption: I built a simplified CV tool in the backend CMS for the gallery that
       renders CVs according to their formatting, which results in a very
       user-friendly and efficient updating process for the team.
@@ -39,12 +39,12 @@ postContent:
       beyond.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1742920422/Screenshot_2025-03-25_at_12.32.05_PM_rtyz2t.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_12.32.05_PM_rtyz2t.png
     caption: I designed a simple archive to search through exhibitions by artist,
       title, press release content, and more.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1742920422/Screenshot_2025-03-25_at_12.32.37_PM_qpllap.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2025-03-25_at_12.32.37_PM_qpllap.png
 date: 2025-03-25T13:40:00.000Z
 date-finish: 2025-03-25T13:40:00.000Z
 display_url: chateaushatto.com

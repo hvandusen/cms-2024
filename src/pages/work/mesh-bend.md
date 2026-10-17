@@ -6,7 +6,7 @@ featured: false
 draft: false
 date: 2020-09-18T13:44:29.472Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600436699/Screen_Shot_2020-09-18_at_9.44.04_AM_xhxmg5.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_9.44.04_AM_xhxmg5.png
 paper_code:
   code: |-
     var draw = new Path();

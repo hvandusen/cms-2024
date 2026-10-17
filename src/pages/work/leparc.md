@@ -7,7 +7,7 @@ draft: false
 date: 2021-05-19T20:35:42.888Z
 date-finish: 2021-05-19T20:35:42.959Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1621455816/Screen_Shot_2021-05-19_at_4.23.16_PM_urq1sz.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_4.23.16_PM_urq1sz.png
 paper_code:
   code: >-
     var speed = 10;

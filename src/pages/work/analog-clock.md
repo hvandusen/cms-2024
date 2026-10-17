@@ -4,7 +4,7 @@ title: Analog clock
 type: Candusen page
 date: 2015-07-29T15:21:00.000Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600434044/Screen_Shot_2020-09-18_at_8.58.54_AM_avj6j7.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_8.58.54_AM_avj6j7.png
 paper_code:
   code: >
     c = project.view.center

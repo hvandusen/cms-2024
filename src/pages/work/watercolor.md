@@ -4,7 +4,7 @@ title: Watercolor
 type: Candusen page
 date: 2020-07-29T15:21:29.840Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431839/Screen_Shot_2020-09-17_at_6.58.09_PM_e9d5d3.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.58.09_PM_e9d5d3.png
 paper_code:
   code: |
     var draw = false;

@@ -4,7 +4,7 @@ title: Yah
 type: Candusen page
 date: 2020-07-29T15:54:10.672Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600436246/Screen_Shot_2020-09-18_at_9.37.05_AM_bbam3e.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_9.37.05_AM_bbam3e.png
 paper_code:
   code: |
     var widthMax = window.innerWidth/6;

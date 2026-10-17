@@ -11,5 +11,5 @@ description: Essay for Avery Shorts about designing their Season 3 email
   template and website. I discuss trying to use emojis as design elements in
   emails, and how screwed up it got.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1616359472/Screen_Shot_2021-03-21_at_4.43.51_PM_phtqns.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-03-21_at_4.43.51_PM_phtqns.png
 ---

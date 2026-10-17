@@ -3,7 +3,7 @@ templateKey: work
 title: Emoji Grid
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1640534407/Screen_Shot_2021-12-26_at_11.00.01_AM_xcy9vh.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-12-26_at_11.00.01_AM_xcy9vh.png
 featured: false
 draft: false
 description: "This is a tool I built to help design email newsletters for Avery

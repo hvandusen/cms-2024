@@ -7,7 +7,7 @@ draft: false
 date: 2021-05-19T20:18:11.781Z
 date-finish: 2021-05-19T20:18:11.805Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1621455504/Screen_Shot_2021-05-19_at_4.18.05_PM_dzsgnl.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_4.18.05_PM_dzsgnl.png
 paper_code:
   code: >-
     var smaller = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;

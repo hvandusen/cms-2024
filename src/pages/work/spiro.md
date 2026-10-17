@@ -7,7 +7,7 @@ draft: false
 date: 2021-05-19T21:01:03.885Z
 date-finish: 2021-05-19T21:01:03.911Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1621458081/Screen_Shot_2021-05-19_at_5.00.58_PM_fyomi0.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_5.00.58_PM_fyomi0.png
 paper_code:
   code: >
     function innerOuter(radius,innerPercentage){

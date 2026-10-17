@@ -3,7 +3,7 @@ templateKey: work
 title: Creative Coding Course
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1657031231/Screen_Shot_2022-07-05_at_10.25.01_AM_ncvsy0.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022-07-05_at_10.25.01_AM_ncvsy0.png
 featured: false
 draft: false
 description: ""
@@ -14,7 +14,7 @@ postContent:
       style of programming tutorial blogs.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1657031231/Screen_Shot_2022-07-05_at_10.25.07_AM_xag4p1.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022-07-05_at_10.25.07_AM_xag4p1.png
     caption: " The course started with a dense introduction to the absolute basics
       of the web: HTML, CSS, and Javascript."
   - type: text
@@ -23,16 +23,16 @@ postContent:
       own end.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1657031231/Screen_Shot_2022-07-05_at_10.26.43_AM_aqyyvf.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022-07-05_at_10.26.43_AM_aqyyvf.png
     caption: I made some interactive lessons where students can edit code live on
       the page and see the results on the fly.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1657031231/Screen_Shot_2022-07-05_at_10.25.41_AM_iowjo8.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022-07-05_at_10.25.41_AM_iowjo8.png
     caption: We also looked at some instances of "rule-based" art for inspo :)
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1657031230/Screen_Shot_2022-07-05_at_10.25.58_AM_akknve.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022-07-05_at_10.25.58_AM_akknve.png
     caption: In one assignment, students had to recreate the picture here with HTML
       and CSS only.
 date: 2022-07-05T14:24:07.238Z

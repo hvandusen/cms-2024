@@ -4,7 +4,7 @@ title: Stamp tool
 type: Candusen page
 date: 2020-07-29T15:53:42.827Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431835/Screen_Shot_2020-09-17_at_6.56.49_PM_rd08h4.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.56.49_PM_rd08h4.png
 paper_code:
   code: >
     var widthMax = window.innerWidth/6;

@@ -4,7 +4,7 @@ title: Flower
 type: Candusen page
 date: 2024-01-29T15:21:00.000Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707321014/Screenshot_2024-02-07_at_10.49.03_AM_dudq8t.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-02-07_at_10.49.03_AM_dudq8t.png
 
 paper_code:
   code: >- 

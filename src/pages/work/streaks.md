@@ -4,7 +4,7 @@ title: Streaks
 type: Candusen page
 date: 2020-07-29T15:51:12.213Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431836/Screen_Shot_2020-09-17_at_6.59.24_PM_vlju8t.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.59.24_PM_vlju8t.png
 paper_code:
   code: |
     

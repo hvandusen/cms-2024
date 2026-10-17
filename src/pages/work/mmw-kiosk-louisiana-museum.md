@@ -3,7 +3,7 @@ templateKey: work
 title: MMW Kiosk @ Louisiana Museum
 type: software
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707318376/140A7170_hkmale.jpg
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/140A7170_hkmale.jpg
 featured: false
 draft: false
 description: I adapted musicandthemindofthe.world to function as a kiosk
@@ -13,12 +13,12 @@ description: I adapted musicandthemindofthe.world to function as a kiosk
 postContent:
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1707318330/Screenshot_2024-02-07_at_9.59.49_AM_rho78r.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-02-07_at_9.59.49_AM_rho78r.png
     caption: The kiosk shows the currently playing recording from MMW in large
       legible type for museumgoers.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1707318376/140A7170_hkmale.jpg
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/140A7170_hkmale.jpg
   - type: text
     text: "**About Music and the Mind of the World:** From 1976 to 1982, Tony Conrad
       (1940-2016) created “Music and the Mind of the World,” a piano composition

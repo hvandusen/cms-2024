@@ -3,7 +3,7 @@ templateKey: work
 title: Cheese
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1640529782/Screen_Shot_2021-12-26_at_9.42.39_AM_rmxmvt.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-12-26_at_9.42.39_AM_rmxmvt.png
 featured: false
 draft: false
 date: 2021-12-26T14:41:50.347Z

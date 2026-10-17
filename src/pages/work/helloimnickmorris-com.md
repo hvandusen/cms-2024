@@ -3,7 +3,7 @@ templateKey: work
 title: helloimnickmorris . com
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707098717/Screenshot_2024-02-04_at_9.04.52_PM_rnn6f2.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-02-04_at_9.04.52_PM_rnn6f2.png
 featured: false
 draft: false
 description: This site is a byproduct of teaching my great friend Nick Morris

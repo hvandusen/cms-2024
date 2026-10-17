@@ -3,7 +3,7 @@ templateKey: work
 title: Tile
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707413163/Screenshot_2024-02-08_at_12.25.26_PM_zflkly.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-02-08_at_12.25.26_PM_zflkly.png
 featured: false
 draft: false
 date: 2023-01-03T17:20:20.803Z

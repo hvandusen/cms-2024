@@ -4,7 +4,7 @@ title: Worm
 type: Candusen page
 date: 2020-07-29T15:52:27.222Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431836/Screen_Shot_2020-09-17_at_6.55.48_PM_iycuhd.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.55.48_PM_iycuhd.png
 paper_code:
   code: >
     var moveOffset = 0;

@@ -3,7 +3,7 @@ templateKey: work
 title: cookery.cooking
 type: Website
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1716474409/Screenshot_2024-05-22_at_3.34.42_PM_xktscn.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-05-22_at_3.34.42_PM_xktscn.png
 featured: false
 draft: false
 description: ""
@@ -15,7 +15,7 @@ postContent:
       user to create different recipes to alter image and video.
   - type: video
     video:
-      - https://res.cloudinary.com/candusen/video/upload/v1716407372/cookery-screen-record-resized_my10nt.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/cookery-screen-record-resized_my10nt.mp4
     caption: I built a looping animation using timeouts in JS to show the user how
       images are altered step by step in sequences that you can save and repeat.
   - type: text
@@ -25,11 +25,11 @@ postContent:
       candidates:'
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1716407848/cookery-logo-spritesheet_ccex38.jpg
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/cookery-logo-spritesheet_ccex38.jpg
   - type: video
     video:
-      - https://res.cloudinary.com/candusen/video/upload/v1716407889/Screen_Recording_2024-05-22_at_3.54.38_PM-resized_df5mv3.mp4
-      - https://res.cloudinary.com/candusen/video/upload/v1716408159/cookery-screenrecord-2_u43lgy.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Recording_2024-05-22_at_3.54.38_PM-resized_df5mv3.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/cookery-screenrecord-2_u43lgy.mp4
     caption: I synced up two HTML videos to show a before and after of a cooked
       video ;-)
 date: 2024-05-22T19:47:01.280Z

@@ -11,7 +11,7 @@ description: /roʊˈdeɪoʊ/, a super computer by Cory Arcangel that plays phone
   games. Check out this iFrame of the official webpage by Arcangel studio about
   the computer.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1616355191/CA034_a_kntph0.jpg
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/CA034_a_kntph0.jpg
 desort: false
 ---
 

@@ -7,7 +7,7 @@ draft: false
 date: 2021-05-19T21:03:20.715Z
 date-finish: 2021-05-19T21:03:20.751Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1621458211/Screen_Shot_2021-05-19_at_5.03.14_PM_scslq5.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-19_at_5.03.14_PM_scslq5.png
 paper_code:
   code: >-
     var all = new Group();

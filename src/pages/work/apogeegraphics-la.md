@@ -3,7 +3,7 @@ templateKey: work
 title: apogeegraphics.la
 type: client site
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707084862/Screenshot_2024-02-04_at_5.14.04_PM_idbugg.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-02-04_at_5.14.04_PM_idbugg.png
 featured: false
 draft: false
 description: >-
@@ -17,10 +17,10 @@ description: >-
 postContent:
   - type: video
     video:
-      - https://res.cloudinary.com/candusen/video/upload/v1707084982/apogee_splash_shop_logo_9c6a677260_qccfxu.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/apogee_splash_shop_logo_9c6a677260_qccfxu.mp4
   - type: video
     video:
-      - https://res.cloudinary.com/candusen/video/upload/v1707085003/apogee_logos_b3779f4e72_nvln6e.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/apogee_logos_b3779f4e72_nvln6e.mp4
     caption: Apogee had several logos which are cycled through when you hover!!
 date: 2022-04-01T21:13:05.658Z
 date-finish: 2022-04-06T21:13:05.663Z

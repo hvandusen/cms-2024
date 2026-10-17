@@ -7,7 +7,7 @@ draft: false
 date: 2020-09-18T13:48:24.339Z
 description: This is a doodle I used to do in class in high school
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600437058/Screen_Shot_2020-09-18_at_9.48.14_AM_baqamo.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_9.48.14_AM_baqamo.png
 paper_code:
   code: >-
     function doodle(points, uni, repeat){

@@ -3,7 +3,7 @@ templateKey: work
 title: Stairs
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431840/Screen_Shot_2020-09-17_at_6.53.13_PM_fu7afk.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.53.13_PM_fu7afk.png
 postContent:
   - type: text
     text: I saw this youtube video explaining how to draw a 3d illusion of stairs

@@ -4,7 +4,7 @@ title: Gears
 type: Candusen page
 date: 2020-07-06T04:47:02.993Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431835/Screen_Shot_2020-09-17_at_6.54.42_PM_jzq0by.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.54.42_PM_jzq0by.png
 paper_code:
   code: |
     var path;// = new Path();

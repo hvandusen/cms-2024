@@ -5,7 +5,7 @@ type: Candusen page
 date: 2020-07-06T04:32:46.053Z
 description: a random weave... idk!
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431838/Screen_Shot_2020-09-17_at_6.53.50_PM_bosgyq.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.53.50_PM_bosgyq.png
 paper_code:
   code: >
     var grid = function(options){

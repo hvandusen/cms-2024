@@ -4,7 +4,7 @@ title: Finger trap
 type: Candusen page
 date: 2020-07-29T15:40:18.287Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431841/Screen_Shot_2020-09-17_at_6.56.23_PM_awjmwn.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.56.23_PM_awjmwn.png
 paper_code:
   code: |
     var totalLines = 50;

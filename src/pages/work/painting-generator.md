@@ -3,7 +3,7 @@ templateKey: work
 title: Painting generator
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1640535730/Screen_Shot_2021-12-26_at_11.21.44_AM_im3g0n.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-12-26_at_11.21.44_AM_im3g0n.png
 featured: false
 draft: false
 date: 2021-12-26T16:21:54.133Z

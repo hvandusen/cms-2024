@@ -3,7 +3,7 @@ templateKey: work
 title: Basket
 type: Candusen page
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1640540072/Screen_Shot_2021-12-26_at_12.34.15_PM_xsrp7e.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-12-26_at_12.34.15_PM_xsrp7e.png
 featured: false
 draft: false
 date: 2021-12-26T17:32:15.545Z

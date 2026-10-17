@@ -6,7 +6,7 @@ featured: false
 draft: false
 date: 2020-09-18T13:45:50.474Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600436698/Screen_Shot_2020-09-18_at_9.43.44_AM_hfa82c.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_9.43.44_AM_hfa82c.png
 paper_code:
   code: >-
     var Drawable = function(units){

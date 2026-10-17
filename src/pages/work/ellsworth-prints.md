@@ -17,9 +17,9 @@ description: >-
 
   2014.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600701291/IMG_7773_hfadwi.jpg
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/IMG_7773_hfadwi.jpg
 postContent:
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1600701291/IMG_7773_hfadwi.jpg
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/IMG_7773_hfadwi.jpg
 ---

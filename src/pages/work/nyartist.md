@@ -3,7 +3,7 @@ templateKey: work
 title: NYARTIST
 type: software
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707086710/Screenshot_2024-02-04_at_5.44.57_PM_cs108p.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screenshot_2024-02-04_at_5.44.57_PM_cs108p.png
 featured: false
 draft: false
 description: >+
@@ -17,16 +17,16 @@ description: >+
 postContent:
   - type: video
     video:
-      - https://res.cloudinary.com/candusen/video/upload/v1707086722/nyartist_coryarcangel_splash_scroll_718bace742_stx1aa.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/nyartist_coryarcangel_splash_scroll_718bace742_stx1aa.mp4
   - type: video
     video:
-      - https://res.cloudinary.com/candusen/video/upload/v1707086727/nyartist_coryarcangel_splash_scroll_print_eda15fad23_gxauft.mp4
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/nyartist_coryarcangel_splash_scroll_print_eda15fad23_gxauft.mp4
   - type: text
     text: The scores are visually abstract- they do not rely on notes on a 12-note
       scale. Rather they are subject to the interpretation of the performer.
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1707086734/Screen_Shot_2022_05_07_at_11_03_35_AM_5b72d693c6_g2ye9i.webp
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022_05_07_at_11_03_35_AM_5b72d693c6_g2ye9i.webp
     caption: >
       Extremely printer-friendly. We love to make your printer-friendly projects!
 date: 2019-02-04T22:43:11.327Z

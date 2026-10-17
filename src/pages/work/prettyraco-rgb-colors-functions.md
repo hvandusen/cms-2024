@@ -9,7 +9,7 @@ description: A story about a function I wrote that sparked a realization about
   colors on screens. I ended up using in most of my programs involving any
   color.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600788162/Screen_Shot_2020-09-22_at_11.21.43_AM_kibfgj.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-22_at_11.21.43_AM_kibfgj.png
 ---
 In 2011 took a leap of faith into computers and programming. I had always enjoyed making things in my life, and I figured that people who learn to program get to make things all day- programs! - whatever those were.
 
@@ -23,7 +23,7 @@ That's when I decided to focus on Javascript and hope that as my own understandi
 
 I started off by looking for ways to draw with code and quickly found Paper.js, the swiss army knife of svg drawing. I became enamored by the concepts it introduced me to like adding points and vectors together to create a kind of visual math for creating pictures. I got to a point where I would think of an idea to try out and have to run to my room to try it out before I forgot it.
 
-![](https://res.cloudinary.com/candusen/image/upload/v1616516564/Screen_Shot_2021-03-23_at_12.22.15_PM_gfoxrl.png "prettyRaCo ball")
+![](https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-03-23_at_12.22.15_PM_gfoxrl.png "prettyRaCo ball")
 
 Of all the ways we interface with computers, writing code is the most intimate way to discover their unsavory aspects.
 

@@ -3,13 +3,13 @@ templateKey: work
 title: Hail Mary Twitter Bot
 type: software
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1707082134/Screen_Shot_2022_07_28_at_7_53_44_AM_659c8079c6_hbg18t.webp
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022_07_28_at_7_53_44_AM_659c8079c6_hbg18t.webp
 featured: false
 draft: false
 postContent:
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1707082141/Screen_Shot_2022_07_28_at_7_59_37_AM_7838fc51b9_fep5ut.webp
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022_07_28_at_7_59_37_AM_7838fc51b9_fep5ut.webp
   - type: text
     text: <p>We worked with Cory Arcangel's studio to produce Hail Mary, an
       algorithmic composition <a
@@ -21,7 +21,7 @@ postContent:
       triennial.</p>
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1707082155/Screen_Shot_2022_06_27_at_2_36_17_PM_8f983bd5a9_y5fx3i.webp
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2022_06_27_at_2_36_17_PM_8f983bd5a9_y5fx3i.webp
     caption: Bell curve equation used to randomly generate some values in the algorithm
   - type: text
     text: '<p>More info here: <a

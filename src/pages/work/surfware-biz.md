@@ -9,5 +9,5 @@ description: website for multinational lifestyle brand Surfware in advance of
   the opening of the flagship store grand opening in Stavanger, Norway. design
   by ben somethingor other
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600708555/Screen_Shot_2020-09-21_at_1.15.42_PM_fdm3x3.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-21_at_1.15.42_PM_fdm3x3.png
 ---

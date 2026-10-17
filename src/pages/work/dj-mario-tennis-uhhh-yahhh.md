@@ -8,7 +8,7 @@ date: 2020-01-13T14:58:00.000Z
 date-finish: 2020-04-05T14:28:00.000Z
 description: ""
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1616359774/Screen_Shot_2021-03-21_at_4.48.44_PM_rnitz0.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-03-21_at_4.48.44_PM_rnitz0.png
 ---
 Tracklist:
 

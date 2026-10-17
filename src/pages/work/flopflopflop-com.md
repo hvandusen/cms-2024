@@ -11,9 +11,9 @@ description: A website for the band Flower Girl. Drops you into a random point
   in a random jam session. Click to jump around randomly. It kinda doesn't work
   anymore. I should fix it.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600709438/Screen_Shot_2020-09-21_at_1.30.21_PM_h7c5zo.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-21_at_1.30.21_PM_h7c5zo.png
 postContent:
   - type: image
     image:
-      - https://res.cloudinary.com/candusen/image/upload/v1621367711/Screen_Shot_2021-05-18_at_3.54.58_PM_l9hbqq.png
+      - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2021-05-18_at_3.54.58_PM_l9hbqq.png
 ---

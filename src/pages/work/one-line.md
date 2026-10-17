@@ -6,7 +6,7 @@ featured: false
 draft: false
 date: 2020-07-31T13:17:39.068Z
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600438038/Screen_Shot_2020-09-18_at_10.06.45_AM_afi6j1.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-18_at_10.06.45_AM_afi6j1.png
 paper_code:
   code: >-
 

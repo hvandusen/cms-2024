@@ -5,7 +5,7 @@ type: Candusen page
 date: 2020-07-05T20:13:10.271Z
 description: It's supposed to look like window blinds.
 featuredimage:
-  - https://res.cloudinary.com/candusen/image/upload/v1600431844/Screen_Shot_2020-09-17_at_6.44.36_PM_vs6zmv.png
+  - https://henryvd-cms.s3.us-east-1.amazonaws.com/media/Screen_Shot_2020-09-17_at_6.44.36_PM_vs6zmv.png
 paper_code:
   code: >
 

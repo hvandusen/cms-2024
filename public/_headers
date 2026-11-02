@@ -1,4 +1,4 @@
-# Lives in static/ because that is Astro's publicDir — this file has to land in
+# Lives in public/ (Astro's publicDir) — this file has to land in
 # the published dist/ root for Netlify to read it.
 
 # Astro content-hashes everything under /_astro/, so it can never go stale.

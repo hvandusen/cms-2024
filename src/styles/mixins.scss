@@ -3,8 +3,8 @@
 // all.scss's global scope; @use isolates each file, so declare it here.
 @use 'WorkTypeColors' as *;
 
-$spritesheet-png: '../../static/img/spritesheet.png';
-$spritesheet-svg: '../../static/img/spritesheet.svg';
+$spritesheet-png: '/img/spritesheet.png';
+$spritesheet-svg: '/img/spritesheet.svg';
 $sprite-size: 128px;
 
 @mixin transform($transforms) {
@@ -17,8 +17,8 @@ $sprite-size: 128px;
 
 @font-face{
   font-family: 'Akzidenz';
-  // Was a repo-relative path into static/ under Gatsby. Fonts now live in
-  // astro/public/fonts, served from the site root like the faces in all.scss.
+  // Was a repo-relative path under Gatsby. Fonts now live in
+  // public/fonts, served from the site root like the faces in all.scss.
   src: url("/fonts/AktivGrotesk.ttf");
 }
 @mixin sprite($column: 0, $row: 0){

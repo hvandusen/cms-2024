@@ -2,7 +2,7 @@ import { defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
 import { z } from 'astro/zod'
 
-// Every shape below was derived by parsing all 133 files in src/pages/work,
+// Every shape below was derived by parsing all 133 files in src/content/work,
 // not from the Decap config — the config allows block types (header, code)
 // that no entry actually uses, and omits nothing that entries do use.
 
@@ -60,7 +60,7 @@ const block = z.discriminatedUnion('type', [
 export type Block = z.infer<typeof block>
 
 const work = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: '../src/pages/work' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/work' }),
   schema: z.object({
     templateKey: z.literal('work'),
     title: z.string(),
@@ -105,11 +105,11 @@ const work = defineCollection({
   }),
 })
 
-// One entry (src/pages/about/index.md), but routing it through a collection
+// One entry (src/content/about/index.md), but routing it through a collection
 // keeps it on the same glob loader as work/ rather than reaching across the
 // project root with a raw import.
 const about = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: '../src/pages/about' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/about' }),
   schema: z.object({
     templateKey: z.literal('about'),
     title: z.string(),

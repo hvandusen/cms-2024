@@ -9,7 +9,7 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-media_folder: static/img
+media_folder: public/img
 public_folder: /img
 media_libraries:
   aws_s3:
@@ -21,7 +21,7 @@ media_libraries:
 collections:
   - name: "work"
     label: "Works"
-    folder: "src/pages/work"
+    folder: "src/content/work"
     label_singular: "work"
     create: true
     slug: "{{slug}}"

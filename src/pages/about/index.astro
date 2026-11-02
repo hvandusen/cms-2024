@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 
 // about.js queried the single markdown file with templateKey: about.
 const entry = await getEntry('about', 'index')
-if (!entry) throw new Error('src/pages/about/index.md is missing')
+if (!entry) throw new Error('src/content/about/index.md is missing')
 const { Content } = await render(entry)
 ---
 
